@@ -13,6 +13,7 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+    <script type="text/javascript" src="<?php echo Yii::app()->createUrl('/BaseJs/'); ?>"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -28,9 +29,11 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+                array('label'=>'Item', 'url'=>array('bg/item/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Apply', 'url'=>array('bg/apply/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'User', 'url'=>array('bg/user/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Brand', 'url'=>array('bg/brand/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Article', 'url'=>array('bg/article/admin'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

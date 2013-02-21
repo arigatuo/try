@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'试用装后台',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -20,46 +20,39 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'111111',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('192.168.*.*','::1'),
 		),
-		*/
 	),
 
 	// application components
 	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-		),
+        'user' => array(
+            // enable cookie-based authentication
+            'allowAutoLogin'=>true,
+            'class' => 'WebUser',
+        ),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName' => false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
 		// uncomment the following to use a MySQL database
-		/*
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=try_lady8844',
 			'emulatePrepare' => true,
-			'username' => 'root',
+			'username' => 'lizhen',
 			'password' => '',
 			'charset' => 'utf8',
 		),
-		*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
@@ -79,12 +72,43 @@ return array(
 				*/
 			),
 		),
+        'session' => array (
+            'class' => 'system.web.CDbHttpSession',
+            'connectionID' => 'db',
+            'sessionTableName' => 'try_lady8844_sessions',
+            'timeout' => 86400,
+            'autoStart' => true,
+        ),
+        'cache'=>array(
+            'class'=>'CMemCache',
+            'servers'=>array(
+                array('host'=>'127.0.0.1', 'port'=>11211, 'weight'=>100),
+            ),
+        ),
 	),
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
+        //soap设置
+        'soap_setting' => array(
+            //soap server 地址
+            'server_url' => 'http://app.lady8844.com/ladygroup/o/main/api/',
+            'group_name' => 'try_aimama',
+            'group_secret' => '795721997a8a659671e7787437ec3e33',
+        ),
+        'roles' => array(
+            'admin' => 'admin',
+            'superAdmin' => 'superAdmin',
+        ),
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		//'adminEmail'=>'webmaster@example.com',
+        'cacheTime' => array(
+            'min' => 60,
+            'hour' => 60 * 60,
+            '6hour' => 3600 * 6,
+            '12hour' => 3600 * 12,
+            'day' => 3600 * 24,
+        ),
 	),
 );
