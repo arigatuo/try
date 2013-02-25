@@ -44,7 +44,8 @@ class Item extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('item_name, item_brand_id, item_start_time, item_end_time, item_pic_small, item_pic_middle',
+			array('item_name, item_type_id, item_brand_id, item_start_time, item_end_time, item_pic_small,
+			item_pic_middle',
                 'required'),
 			array('item_name', 'length', 'max'=>30),
 			array('item_brand_id, item_apply_num_plus, item_apply_num, item_piece', 'length', 'max'=>10),
@@ -54,7 +55,7 @@ class Item extends CActiveRecord
                 'message'=>'试用申请开始时间必须小于结束时间'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('item_id, item_name, item_brand_id, item_ctime, item_status', 'safe', 'on'=>'search'),
+			array('item_id, item_name, item_brand_id, item_ctime, item_status, item_type_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,6 +87,7 @@ class Item extends CActiveRecord
 			'item_apply_num_plus' => 'Item Apply Num Plus',
 			'item_apply_num' => 'Item Apply Num',
 			'item_piece' => 'Item Piece',
+            'item_type_id' => 'Item Type Id',
 		);
 	}
 
@@ -105,6 +107,7 @@ class Item extends CActiveRecord
 		$criteria->compare('item_brand_id',$this->item_brand_id,false);
 		$criteria->compare('item_status',$this->item_status,false);
         $criteria->compare('item_ctime',$this->item_ctime,true);
+        $criteria->compare('item_type_id',$this->item_type_id,false);
         /*
 		$criteria->compare('item_start_time',$this->item_start_time,true);
 		$criteria->compare('item_end_time',$this->item_end_time,true);
@@ -119,13 +122,22 @@ class Item extends CActiveRecord
 		));
 	}
 
-    //试用装状态列表
-    public function statusList(){
-        return array(
-            array('value' => 'offline', 'name' => '未发布'),
-            array('value' => 'online', 'name' => '发布'),
+    /**
+     * 试用装状态列表
+     * @param string $key, 有key的话返回对应value
+     * @return array
+     */
+    public function statusList($key=""){
+        $list = array(
+            'offline' => '未发布',
+            'online' => '发布',
         );
+        if(!empty($key) && array_key_exists($key, $list))
+            return $list[$key];
+        else
+            return $list;
     }
+
 
     public function beforeSave(){
         //转化为时间戳格式
@@ -150,5 +162,9 @@ class Item extends CActiveRecord
         if(!empty($this->item_ctime))
             $this->item_ctime = CommonHelper::formatDate($this->item_ctime);
         return parent::afterFind();
+    }
+
+    //todo 删除,更改条目后删除图片文件
+    public function afterDelete(){
     }
 }

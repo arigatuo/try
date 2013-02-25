@@ -45,7 +45,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'apply_id',
 		'user_id',
 		'item_id',
-		'status',
+        array(
+            'name' => 'status',
+            'value' => 'Apply::model()->statusList($data->status)',
+            'filter' => Apply::model()->statusList(),
+        ),
+		'apply_text',
 		array(
 			'class'=>'CButtonColumn',
 		),

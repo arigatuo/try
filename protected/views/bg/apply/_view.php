@@ -16,5 +16,9 @@
 	<?php echo CHtml::encode($data->status); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('apply_text')); ?>:</b>
+	<?php echo CHtml::encode($data->apply_text); ?>
+	<br />
+
 
 </div>

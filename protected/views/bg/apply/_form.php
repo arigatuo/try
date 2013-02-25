@@ -23,8 +23,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status',array('size'=>8,'maxlength'=>8)); ?>
+        <?php echo CHtml::dropDownList("Apply[status]", $model->status, Apply::model()->statusList()); ?>
 		<?php echo $form->error($model,'status'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'apply_text'); ?>
+		<?php echo $form->textArea($model,'apply_text',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'apply_text'); ?>
 	</div>
 
 	<div class="row buttons">

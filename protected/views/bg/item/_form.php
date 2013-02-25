@@ -1,18 +1,10 @@
-<script type="text/javascript" src="http://bbs.lady8844.com/images/js/imgpreview.min.js"></script>
-<script type="text/javascript">
-    var preview_image = function(){
-        jQuery('.item_photo').imgPreview({
-            containerID: 'imgPreviewWithStyles',
-            srcAttr:'value',
-            imgCSS:{}
-        });
-    }
+<?php $this->renderPartial("////common/preview_image"); ?>
+<script>
     <?php
     if(!empty($model->item_pic_big) || !empty($model->item_pic_small))
         echo "jQuery(function(){preview_image();})";
     ?>
 </script>
-
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -30,6 +22,15 @@
 		<?php echo $form->error($model,'item_name'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'item_type_id'); ?>
+        <?php echo CHtml::dropDownList("Item[item_type_id]", $model->item_type_id,
+        CHtml::listData(ItemType::model()->findAll
+            (), "item_type_id",
+            "item_type_name")); ?>
+        <?php echo $form->error($model,'item_type_id'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'item_brand_id'); ?>
         <?php echo CHtml::dropDownList("Item[item_brand_id]", $model->item_brand_id,
@@ -42,7 +43,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'item_status'); ?>
         <?php echo CHtml::dropDownList("Item[item_status]", $model->item_status,
-                    CHtml::listData(Item::model()->statusList(), 'value', 'name')) ?>
+                    Item::model()->statusList()) ?>
 		<?php echo $form->error($model,'item_status'); ?>
 	</div>
 

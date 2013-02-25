@@ -33,7 +33,7 @@ class AjaxController extends Controller
 	{
 		return array(
 				array('allow',
-						'users'=>Yii::app()->params['roles'],
+						'roles'=>Yii::app()->params['roles'],
                 ),
 		);
 	}

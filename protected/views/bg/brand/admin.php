@@ -44,8 +44,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'brand_id',
 		'brand_name',
-		'brand_ctime',
-		'brand_pic',
+        array(
+            'name' => 'brand_pic',
+            'value' => '!empty($data->brand_pic) ? CHtml::image($data->brand_pic,"",
+            array("style"=>"width:100px;height:100px")) : ""',
+            'type' => 'raw',
+        ),
+        array(
+            'name' => 'brand_ctime',
+            'value' => 'CommonHelper::formatDate($data->brand_ctime)',
+        ),
 		array(
 			'class'=>'CButtonColumn',
 		),

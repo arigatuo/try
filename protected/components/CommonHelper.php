@@ -10,6 +10,23 @@
 class CommonHelper
 {
     /**
+     * 文件大小格式化
+     * @param $bytes
+     * @return string
+     */
+    public static function formatBytes($bytes) {
+        if($bytes >= 1073741824) {
+            $bytes = round($bytes / 1073741824 * 100) / 100 . 'GB';
+        } elseif($bytes >= 1048576) {
+            $bytes = round($bytes / 1048576 * 100) / 100 . 'MB';
+        } elseif($bytes >= 1024) {
+            $bytes = round($bytes / 1024 * 100) / 100 . 'KB';
+        } else {
+            $bytes = $bytes . 'Bytes';
+        }
+        return $bytes;
+    }
+    /**
      * 格式化时间戳
      * @param $date
      * @return string

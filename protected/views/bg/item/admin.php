@@ -50,14 +50,19 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
             'type' => 'raw',
         ),
         array(
+            'name' => 'item_type_id',
+            'value' => 'ItemType::model()->findByPk($data->item_type_id)->getAttribute("item_type_name")',
+            'filter' => CHtml::listData(ItemType::model()->findAll(), "item_type_id", "item_type_name"),
+        ),
+        array(
             'name' => 'item_brand_id',
             'value' => 'Brand::model()->findByPk($data->item_brand_id)->getAttribute("brand_name")',
             'filter' => CHtml::listData(Brand::model()->findAll(), "brand_id", "brand_name"),
         ),
         array(
             'name' => 'item_status',
-            'value' => '$data->item_status',
-            'filter' => CHtml::listData(Item::model()->statusList(), "value", "name"),
+            'value' => 'Item::model()->statusList($data->item_status)',
+            'filter' => Item::model()->statusList(),
         ),
 		'item_start_time',
         'item_end_time',

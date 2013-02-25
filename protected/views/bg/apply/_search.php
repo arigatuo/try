@@ -25,6 +25,11 @@
 		<?php echo $form->textField($model,'status',array('size'=>8,'maxlength'=>8)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'apply_text'); ?>
+		<?php echo $form->textArea($model,'apply_text',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

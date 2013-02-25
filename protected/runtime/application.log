@@ -313,3 +313,597 @@ Stack trace:
 REQUEST_URI=/try/bg/item/admin
 HTTP_REFERER=http://192.168.0.226/try/bg/item/view/id/1
 ---
+2013/02/21 16:41:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/apply
+---
+2013/02/22 10:21:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/itemType
+---
+2013/02/22 10:39:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('itemType/admin')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType
+---
+2013/02/22 10:40:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('itemType/admin')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/create
+---
+2013/02/22 10:40:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('itemType/admin')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/create
+---
+2013/02/22 10:42:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bg/itemtype/admin".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemtype/adm...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/bg/itemtype/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:44:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/itemType/adm...')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/bg/itemType/admin
+HTTP_REFERER=http://192.168.0.226/try/itemType/2
+---
+2013/02/22 10:52:09 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/update.php(18): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('update', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(87): CController->render('update', Array)
+#13 [internal function]: ItemController->actionUpdate('4')
+#14 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#15 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#25 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#26 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/try/bg/item/update/id/4
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:16 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:47 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:47 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:47 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:47 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:52:47 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 10:53:15 [error] [exception.CException] exception 'CException' with message 'Property "Brand.item_type_id" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_type_id')
+#1 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1696): CActiveRecord->__get('item_type_id')
+#2 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1659): CHtml::value(Object(Brand), 'item_type_id')
+#3 /home/lizhen/lizhen_html/try/protected/views/bg/item/_form.php(30): CHtml::listData(Array, 'item_type_id', 'item_type_name')
+#4 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#5 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#7 /home/lizhen/lizhen_html/try/protected/views/bg/item/create.php(15): CController->renderPartial('_form', Array)
+#8 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#9 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(63): CController->render('create', Array)
+#13 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#21 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#23 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#24 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/22 15:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "try/main/Ajax/Uploadimg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('try/main/Ajax/U...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try//try/main/Ajax/Uploadimg
+---
+2013/02/22 15:39:59 [error] [php] array_map(): Argument #2 should be an array (/home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:93)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): AjaxController->filterAccessControl()
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/02/22 15:40:18 [error] [php] array_map(): Argument #2 should be an array (/home/lizhen/lizhen_html/yii/web/auth/CAccessControlFilter.php:93)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): AjaxController->filterAccessControl()
+#1 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/02/22 16:56:12 [error] [php] Undefined variable: err (/home/lizhen/lizhen_html/try/protected/controllers/main/AjaxController.php:69)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(287): AjaxController->runAction()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#3 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/protected/controllers/main/AjaxController.php (69)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/02/22 17:03:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:03:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:04:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---
+2013/02/22 17:07:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/upload/ucg/day_130222/201302221703115901.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/upload/ucg...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
+HTTP_REFERER=http://192.168.0.226/try/main/apply
+---

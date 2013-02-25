@@ -8,6 +8,7 @@
  * @property string $user_id
  * @property string $item_id
  * @property string $status
+ * @property string $apply_text
  */
 class Apply extends CActiveRecord
 {
@@ -37,12 +38,13 @@ class Apply extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, item_id', 'required'),
+			array('user_id, item_id, apply_text', 'required'),
 			array('user_id, item_id', 'length', 'max'=>20),
 			array('status', 'length', 'max'=>8),
+			array('apply_text', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('apply_id, user_id, item_id, status', 'safe', 'on'=>'search'),
+			array('apply_id, user_id, item_id, status, apply_text', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +69,7 @@ class Apply extends CActiveRecord
 			'user_id' => 'User',
 			'item_id' => 'Item',
 			'status' => 'Status',
+			'apply_text' => 'Apply Text',
 		);
 	}
 
@@ -85,9 +88,23 @@ class Apply extends CActiveRecord
 		$criteria->compare('user_id',$this->user_id,true);
 		$criteria->compare('item_id',$this->item_id,true);
 		$criteria->compare('status',$this->status,true);
+		$criteria->compare('apply_text',$this->apply_text,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
+    /**
+     * 试用装申请状态列表
+     * @param string $key
+     * @return array
+     */
+    public function statusList($key=""){
+        $list =  array(
+            'applying' => '申请中',
+            'accept' => '申请通过',
+        );
+        return !empty($key) && array_key_exists($key, $list) ? $list[$key] : $list;
+    }
 }

@@ -1,5 +1,5 @@
 <?php
-
+//todo 删除，更改条目后删除原图片
 /**
  * This is the model class for table "try_brand".
  *
