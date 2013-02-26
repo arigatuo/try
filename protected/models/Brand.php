@@ -11,6 +11,7 @@
  */
 class Brand extends CActiveRecord
 {
+    public $oldRecord;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -92,10 +93,27 @@ class Brand extends CActiveRecord
 		));
 	}
 
+    public function afterFind(){
+        //保存更新前的记录
+        $this->oldRecord = clone $this;
+        return parent::afterFind();
+    }
+
     public function beforeSave(){
         if($this->isNewRecord){
             $this->brand_ctime = time();
         }
+        if(!empty($this->oldRecord->brand_pic) && $this->oldRecord->brand_pic != $this->brand_pic){
+            /**
+             * 删除更新之前的图片文件
+             */
+            CommonHelper::unlinkRelationPic($this->oldRecord->brand_pic);
+        }
         return parent::beforeSave();
+    }
+
+    public function beforeDelete(){
+        !empty($this->brand_pic) && CommonHelper::unlinkRelationPic($this->brand_pic);
+        return parent::beforeDelete();
     }
 }

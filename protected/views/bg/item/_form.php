@@ -144,6 +144,18 @@
 	</div>
 
     <div class="row">
+        <?php echo $form->labelEx($model,'item_piece_left'); ?>
+        <?php echo $form->textField($model,'item_piece_left',array('size'=>10,'maxlength'=>10)); ?>
+        <?php echo $form->error($model,'item_piece_left'); ?>
+    </div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'item_prop'); ?>
+        <?php echo $form->textField($model,'item_prop',array('size'=>10,'maxlength'=>10)); ?>
+        <?php echo $form->error($model,'item_prop'); ?>
+    </div>
+
+    <div class="row">
         <?php echo $form->labelEx($model,'item_intro'); ?>
         <?php echo $form->textArea($model,'item_intro',array('rows'=>6, 'cols'=>50)); ?>
         <?php echo $form->error($model,'item_intro'); ?>

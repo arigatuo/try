@@ -64,6 +64,10 @@ class CommonHelper
         return $curBrowser;
     }
 
+    /**
+     * soap连接初始化
+     * @return SoapClient
+     */
     public static function initRemoteCon(){
         $soapSettings = Yii::app()->params['soap_setting'];
         $client = new SoapClient($soapSettings['server_url'], array('trace'=>1));
@@ -74,6 +78,13 @@ class CommonHelper
         return $client;
     }
 
+    /**
+     * 截取字数
+     * @param $string 要截取的字符串
+     * @param $length 截取的长度
+     * @param string $etc 截取后字符串后缀
+     * @return string 返回截取后的字符串
+     */
     public static function truncate_utf8_string($string, $length, $etc = '...')
     {
         $result = '';
@@ -112,6 +123,7 @@ class CommonHelper
      */
     public static function readExtName($fileName){
         $theExt = "";
+
         if(!empty($fileName)){
             $fileNameArray = explode('.', $fileName);
             if(!empty($fileNameArray)){
@@ -121,5 +133,19 @@ class CommonHelper
         }
 
         return $theExt;
+    }
+
+    /**
+     * 根据相对url删除文件
+     * @param $url
+     * @return bool
+     */
+    public static function unlinkRelationPic($url){
+        $return = FALSE;
+        $realFilePath = Yii::app()->basePath."/..".str_replace(Yii::app()->baseUrl, "", $url);
+        //todo a test
+        if(file_exists($realFilePath))
+            unlink($realFilePath) && $return = TRUE;
+        return $return;
     }
 }

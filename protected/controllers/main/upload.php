@@ -31,8 +31,7 @@ $localName='';
 if(isset($_SERVER['HTTP_CONTENT_DISPOSITION'])&&preg_match('/attachment;\s+name="(.+?)";\s+filename="(.+?)"/i',$_SERVER['HTTP_CONTENT_DISPOSITION'],$info)){//HTML5上传
 	file_put_contents($tempPath,file_get_contents("php://input"));
 	$localName=urldecode($info[2]);
-}
-else{//标准表单式上传
+} else{//标准表单式上传
 	$upfile=@$_FILES[$inputName];
 	if(!isset($upfile))$err='文件域的name错误';
 	elseif(!empty($upfile['error'])){

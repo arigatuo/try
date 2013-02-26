@@ -18,6 +18,8 @@
  */
 class Item extends CActiveRecord
 {
+    //更新前的record
+    public $oldRecord;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -50,7 +52,7 @@ class Item extends CActiveRecord
 			array('item_name', 'length', 'max'=>30),
 			array('item_brand_id, item_apply_num_plus, item_apply_num, item_piece', 'length', 'max'=>10),
 			array('item_status', 'length', 'max'=>7),
-			array('item_intro, item_pic_small, item_pic_middle', 'safe'),
+			array('item_intro, item_pic_small, item_pic_middle, item_piece_left, item_prop', 'safe'),
             array('item_start_time', 'compare', 'compareAttribute'=>'item_end_time', 'operator'=>'<',
                 'message'=>'试用申请开始时间必须小于结束时间'),
 			// The following rule is used by search().
@@ -139,6 +141,22 @@ class Item extends CActiveRecord
     }
 
 
+    public function afterFind(){
+        //时间格式化
+        if(!empty($this->item_start_time))
+            $this->item_start_time = CommonHelper::formatDate($this->item_start_time);
+        if(!empty($this->item_end_time))
+            $this->item_end_time = CommonHelper::formatDate($this->item_end_time);
+        if(!empty($this->item_ctime))
+            $this->item_ctime = CommonHelper::formatDate($this->item_ctime);
+
+        //保存更新之前的记录
+        $this->oldRecord = clone $this;
+
+
+        return parent::afterFind();
+    }
+
     public function beforeSave(){
         //转化为时间戳格式
         if($this->isNewRecord){
@@ -150,21 +168,23 @@ class Item extends CActiveRecord
             $this->item_start_time = strtotime($this->item_start_time);
         if(!empty($this->item_end_time))
             $this->item_end_time = strtotime($this->item_end_time);
+
+        /**
+         * 图片更新删除之前的图片
+         */
+        if(!empty($this->oldRecord->item_pic_small) && $this->oldRecord->item_pic_small != $this->item_pic_small){
+            CommonHelper::unlinkRelationPic($this->oldRecord->item_pic_small);
+        }
+        if(!empty($this->oldRecord->item_pic_middle) && $this->oldRecord->item_pic_middle != $this->item_pic_middle){
+            CommonHelper::unlinkRelationPic($this->oldRecord->item_pic_middle);
+        }
         return parent::beforeSave();
     }
 
-    public function afterFind(){
-        //时间格式化
-        if(!empty($this->item_start_time))
-            $this->item_start_time = CommonHelper::formatDate($this->item_start_time);
-        if(!empty($this->item_end_time))
-            $this->item_end_time = CommonHelper::formatDate($this->item_end_time);
-        if(!empty($this->item_ctime))
-            $this->item_ctime = CommonHelper::formatDate($this->item_ctime);
-        return parent::afterFind();
-    }
-
     //todo 删除,更改条目后删除图片文件
-    public function afterDelete(){
+    public function beforeDelete(){
+        !empty($this->item_pic_small) && CommonHelper::unlinkRelationPic($this->item_pic_small);
+        !empty($this->item_pic_middle) && CommonHelper::unlinkRelationPic($this->item_pic_middle);
+        return parent::beforeDelete();
     }
 }

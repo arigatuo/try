@@ -907,3 +907,75 @@ Stack trace:
 REQUEST_URI=/try/main/upload/ucg/day_130222/201302221703115901.jpg
 HTTP_REFERER=http://192.168.0.226/try/main/apply
 ---
+2013/02/25 12:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Teset".' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('Teset')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('Teset')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/Teset')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/Test/Teset
+---
+2013/02/25 12:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/20130225/c60ccab5d28e41245f73dc2c552e193d.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130225...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130225/c60ccab5d28e41245f73dc2c552e193d.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/25 14:21:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/20130225/c60ccab5d28e41245f73dc2c552e193d.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130225...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130225/c60ccab5d28e41245f73dc2c552e193d.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/02/25 14:42:45 [error] [exception.CException] exception 'CException' with message 'Property "Item.item_pic_big" is not defined.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_pic_big')
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(171): CActiveRecord->__get('item_pic_big')
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#5 [internal function]: ItemController->actionUpdate('9')
+#6 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#7 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#18 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/try/bg/item/update/id/9
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/9
+---
+2013/02/25 14:48:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/20130225/364a7fa2e92a700a38e389df88211311.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130225...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130225/364a7fa2e92a700a38e389df88211311.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/02/25 14:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/20130225/364a7fa2e92a700a38e389df88211311.jpg".' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130225...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130225/364a7fa2e92a700a38e389df88211311.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/update/id/2
+---
