@@ -1,5 +1,4 @@
 <?php
-//todo 删除，更改条目后删除原图片
 /**
  * This is the model class for table "try_brand".
  *
@@ -115,5 +114,25 @@ class Brand extends CActiveRecord
     public function beforeDelete(){
         !empty($this->brand_pic) && CommonHelper::unlinkRelationPic($this->brand_pic);
         return parent::beforeDelete();
+    }
+
+    public function getBrandNameById($brand_id, $useCache = 1, $limit = 1){
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("`brand_id`=:brand_id");
+        $criteria->params = array(
+            ':brand_id' => $brand_id,
+        );
+        $criteria->limit = $limit;
+
+        $cacheConfig = array(
+            'cacheKey' => md5(__CLASS__.__FUNCTION__.$limit),
+            'useCache' => $useCache,
+            'limit' => $limit,
+            'cacheTime' => Yii::app()->params['cacheTime']['day'],
+            'modelName' => __CLASS__,
+            'criteria' => $criteria,
+            'findAll' => false,
+        );
+        return CacheHelper::getCacheList($cacheConfig);
     }
 }

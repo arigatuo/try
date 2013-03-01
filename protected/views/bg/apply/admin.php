@@ -46,8 +46,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'user_id',
 		'item_id',
         array(
-            'name' => 'status',
-            'value' => 'Apply::model()->statusList($data->status)',
+            'name' => 'apply_status',
+            'value' => 'Apply::model()->statusList($data->apply_status)',
             'filter' => Apply::model()->statusList(),
         ),
 		'apply_text',

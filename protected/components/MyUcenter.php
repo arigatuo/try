@@ -20,6 +20,7 @@ class MyUcenter extends CController
 
         list($uid, $username, $password, $email) = uc_user_login($username, $password);
 
+
         if(isset($uid) && ($uid > 0)){
             $userAuthCookie = uc_authcode($uid."\t".$username, 'ENCODE');
             $cookieTime = 86400;
@@ -91,5 +92,15 @@ class MyUcenter extends CController
 
     public static function getUserHeadByUid($uid){
         return  "http://bbs.lady8844.com/uc_server/avatar.php?uid={$uid}&size=middle";
+    }
+
+    /**
+     * 取得登陆用户的uid
+     * @return int $uid
+     */
+    public static function getUserId(){
+        $userInfo = self::isLogin();
+        if(!empty($userInfo))
+            return $userInfo[0];
     }
 }

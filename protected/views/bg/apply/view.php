@@ -21,7 +21,7 @@ $this->menu=array(
 		'apply_id',
 		'user_id',
 		'item_id',
-		'status',
+		'apply_status',
 		'apply_text',
 	),
 )); ?>

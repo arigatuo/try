@@ -1,3 +1,9 @@
+<?php
+//图片预览
+$this->renderPartial('////common/preview_image', array(
+    "photo_attr_array" => array($model->media_photo)
+));
+?>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -11,7 +17,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'media_position'); ?>
-		<?php echo $form->textField($model,'media_position',array('size'=>30,'maxlength'=>30)); ?>
+        <?php echo CHtml::dropDownList("Media[media_position]", $model->media_position,
+            CHtml::listData(MediaPosition::model()
+                ->findAll(),
+            "media_position", "media_position_name")); ?>
 		<?php echo $form->error($model,'media_position'); ?>
 	</div>
 
@@ -23,7 +32,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'media_photo'); ?>
-		<?php echo $form->textField($model,'media_photo',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $this->renderPartial("////common/ajax_upload", array("input_id" => "Media_media_photo")); ?>
+		<?php echo $form->textField($model,'media_photo',array('size'=>60,'maxlength'=>255, 'class'=>'item_photo')); ?>
 		<?php echo $form->error($model,'media_photo'); ?>
 	</div>
 
@@ -31,12 +41,6 @@
 		<?php echo $form->labelEx($model,'media_text'); ?>
 		<?php echo $form->textField($model,'media_text',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'media_text'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'media_ctime'); ?>
-		<?php echo $form->textField($model,'media_ctime',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'media_ctime'); ?>
 	</div>
 
 	<div class="row buttons">

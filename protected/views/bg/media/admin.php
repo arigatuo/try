@@ -44,8 +44,18 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'media_id',
 		'media_position',
+        array(
+            'name' => 'media_position',
+            'value' => 'MediaPosition::model()->findByPk($data->media_position)->getAttribute("media_position_name")',
+            'filter' => CHtml::listData(MediaPosition::model()->findAll(), "media_position", "media_position_name"),
+        ),
 		'media_url',
-		'media_photo',
+        array(
+            'name' => 'media_photo',
+            'value' => '!empty($data->media_photo) ? CHtml::image($data->media_photo, "",
+            array("style"=>"width:100px;height:100px")) : ""',
+            'type' => 'raw',
+        ),
 		'media_text',
 		'media_ctime',
 		array(

@@ -69,6 +69,8 @@ class Item extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            "brand" => array(self::BELONGS_TO, "Brand", '', 'on'=>'t.item_brand_id=brand.brand_id'),
+            'item_type' => array(self::BELONGS_TO, "ItemType", "", 'on'=>'t.item_type_id=item_type.item_type_id'),
 		);
 	}
 
@@ -181,10 +183,42 @@ class Item extends CActiveRecord
         return parent::beforeSave();
     }
 
-    //todo 删除,更改条目后删除图片文件
+    //删除,更改条目后删除图片文件
     public function beforeDelete(){
         !empty($this->item_pic_small) && CommonHelper::unlinkRelationPic($this->item_pic_small);
         !empty($this->item_pic_middle) && CommonHelper::unlinkRelationPic($this->item_pic_middle);
         return parent::beforeDelete();
+    }
+
+    /**
+     * 读取相关列表
+     * @param $position
+     * @param int $limit
+     * @param int $useCache
+     * @return array
+     */
+    public function readList($limit = 5, $useCache = 1, $usePage = 0){
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("`item_status`=:item_status");
+        $criteria->params = array(
+            'item_status' => 'online',
+        );
+        $criteria->order = "item_id desc";
+        if(empty($usePage))
+            $criteria->limit = $limit;
+        $criteria->with = array('brand');
+
+        $curPage = Yii::app()->request->getParam("page");
+
+        $cacheConfig = array(
+            'cacheKey' => md5(__CLASS__.__FUNCTION__.$limit.$usePage.$curPage),
+            'useCache' => $useCache,
+            'limit' => $limit,
+            'cacheTime' => Yii::app()->params['cacheTime']['hour'],
+            'modelName' => __CLASS__,
+            'criteria' => $criteria,
+            'usePage' => $usePage,
+        );
+        return CacheHelper::getCacheList($cacheConfig);
     }
 }

@@ -35,6 +35,9 @@
                 array('label'=>'Brand', 'url'=>array('bg/brand/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Article', 'url'=>array('bg/article/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'ItemType', 'url'=>array('bg/itemType/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Media', 'url'=>array('bg/media/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'MediaPosition', 'url'=>array('bg/MediaPosition/admin'),
+                    'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

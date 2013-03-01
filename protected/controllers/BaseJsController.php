@@ -11,6 +11,7 @@ class BaseJsController extends Controller{
     public function actionIndex(){
         $baseSettings = array(
             'baseUrl' => Yii::app()->baseUrl."/",
+            'serverTime' => time(),
         );
 
         echo "window.siteSettings = ".CJavaScript::encode($baseSettings);

@@ -143,7 +143,6 @@ class CommonHelper
     public static function unlinkRelationPic($url){
         $return = FALSE;
         $realFilePath = Yii::app()->basePath."/..".str_replace(Yii::app()->baseUrl, "", $url);
-        //todo a test
         if(file_exists($realFilePath))
             unlink($realFilePath) && $return = TRUE;
         return $return;

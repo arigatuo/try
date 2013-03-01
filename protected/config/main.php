@@ -6,6 +6,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+    'language'=>'zh_cn',	//new by lizhen
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'试用装后台',
 
@@ -105,6 +106,7 @@ return array(
 		//'adminEmail'=>'webmaster@example.com',
         'cacheTime' => array(
             'min' => 60,
+            '5min' => 5 * 60,
             'hour' => 60 * 60,
             '6hour' => 3600 * 6,
             '12hour' => 3600 * 12,

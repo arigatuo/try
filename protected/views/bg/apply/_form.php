@@ -22,9 +22,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-        <?php echo CHtml::dropDownList("Apply[status]", $model->status, Apply::model()->statusList()); ?>
-		<?php echo $form->error($model,'status'); ?>
+		<?php echo $form->labelEx($model,'apply_status'); ?>
+        <?php echo CHtml::dropDownList("Apply[apply_status]", $model->apply_status, Apply::model()->statusList()); ?>
+		<?php echo $form->error($model,'apply_status'); ?>
 	</div>
 
 	<div class="row">

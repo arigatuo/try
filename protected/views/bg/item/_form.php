@@ -25,9 +25,7 @@
     <div class="row">
         <?php echo $form->labelEx($model,'item_type_id'); ?>
         <?php echo CHtml::dropDownList("Item[item_type_id]", $model->item_type_id,
-        CHtml::listData(ItemType::model()->findAll
-            (), "item_type_id",
-            "item_type_name")); ?>
+        CHtml::listData(ItemType::model()->findAll(), "item_type_id", "item_type_name")); ?>
         <?php echo $form->error($model,'item_type_id'); ?>
     </div>
 
@@ -131,11 +129,13 @@
 		<?php echo $form->error($model,'item_apply_num_plus'); ?>
 	</div>
 
+    <!--
 	<div class="row">
 		<?php echo $form->labelEx($model,'item_apply_num'); ?>
 		<?php echo $form->textField($model,'item_apply_num',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'item_apply_num'); ?>
 	</div>
+	-->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'item_piece'); ?>

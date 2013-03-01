@@ -21,8 +21,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'status'); ?>
-		<?php echo $form->textField($model,'status',array('size'=>8,'maxlength'=>8)); ?>
+		<?php echo $form->label($model,'apply_status'); ?>
+		<?php echo $form->textField($model,'apply_status',array('size'=>8,'maxlength'=>8)); ?>
 	</div>
 
 	<div class="row">

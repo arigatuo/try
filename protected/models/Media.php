@@ -13,6 +13,7 @@
  */
 class Media extends CActiveRecord
 {
+    public $oldRecord;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -39,10 +40,9 @@ class Media extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('media_position, media_url, media_ctime', 'required'),
+			array('media_position, media_url', 'required'),
 			array('media_position', 'length', 'max'=>30),
 			array('media_url, media_photo, media_text', 'length', 'max'=>255),
-			array('media_ctime', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('media_id, media_position, media_url, media_photo, media_text, media_ctime', 'safe', 'on'=>'search'),
@@ -95,6 +95,66 @@ class Media extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+            'pagination' => array(
+                'pageSize' => 20,
+            ),
+            'sort' => array(
+                'defaultOrder' => 'media_id desc',
+            ),
 		));
 	}
+
+    public function beforeSave(){
+        if($this->isNewRecord){
+            $this->media_ctime = time();
+        }
+        if(!is_numeric($this->media_ctime))
+            $this->media_ctime = strtotime($this->media_ctime);
+        if(!empty($this->media_photo) && !empty($this->oldRecord->media_photo) && $this->media_photo !=
+            $this->oldRecord->media_photo){
+                //删除更新前的图片文件
+                CommonHelper::unlinkRelationPic($this->oldRecord->media_photo);
+        }
+        return parent::beforeSave();
+    }
+
+    public function afterFind(){
+        if(is_numeric($this->media_ctime))
+            $this->media_ctime = CommonHelper::formatDate($this->media_ctime);
+        $this->oldRecord = clone $this;
+
+        return parent::afterFind();
+    }
+
+    /**
+     * 按条件返回列表
+     * @param $position 媒体位
+     * @param int $limit 个数限制
+     * @param int $useCache 是否使用缓存 默认1使用
+     * @return array
+     */
+    public function readList($position, $limit = 5, $useCache = 1){
+        $resultList = array();
+        $defaultLimit = 5;
+        $cacheKey = md5(__CLASS__.__FUNCTION__.$position.$limit);
+        $cacheTime = Yii::app()->params['cacheTime']['5min'];
+        $cacheVal = Yii::app()->cache->get($cacheKey);
+        if(!empty($cacheVal) && !$useCache){
+            $resultList = $cacheVal;
+        }else{
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("`media_position`=:position");
+            $criteria->params = array(
+                ':position' => $position
+            );
+            $criteria->order = "media_id desc";
+            $criteria->limit = !empty($limit) ? $limit : $defaultLimit;
+
+            $resultList = self::model()->findAll($criteria);
+            if(!empty($resultList))
+                Yii::app()->cache->set($cacheKey, $resultList, $cacheTime);
+        }
+
+        return $resultList;
+    }
 }

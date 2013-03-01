@@ -12,8 +12,8 @@
 	<?php echo CHtml::encode($data->item_id); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
-	<?php echo CHtml::encode($data->status); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('apply_status')); ?>:</b>
+	<?php echo CHtml::encode($data->apply_status); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('apply_text')); ?>:</b>

@@ -1,0 +1,10 @@
+.errorMessage{
+    color: red;
+    font-size:11px;
+}
+.box2{
+    height:350px;
+}
+.hidden{
+    display:none
+}
