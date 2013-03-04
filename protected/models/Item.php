@@ -197,13 +197,19 @@ class Item extends CActiveRecord
      * @param int $useCache
      * @return array
      */
-    public function readList($limit = 5, $useCache = 1, $usePage = 0){
+    public function readList($limit = 5, $useCache = 1, $usePage = 0, $selectParams = "", $condition=""){
         $criteria = new CDbCriteria();
+        if(!empty($selectParams)){
+            $criteria->params = $selectParams;
+        if(!empty($condition))
+            $criteria->addCondition($condition);
+
         $criteria->addCondition("`item_status`=:item_status");
         $criteria->params = array(
             'item_status' => 'online',
         );
         $criteria->order = "item_id desc";
+        }
         if(empty($usePage))
             $criteria->limit = $limit;
         $criteria->with = array('brand');
@@ -211,7 +217,7 @@ class Item extends CActiveRecord
         $curPage = Yii::app()->request->getParam("page");
 
         $cacheConfig = array(
-            'cacheKey' => md5(__CLASS__.__FUNCTION__.$limit.$usePage.$curPage),
+            'cacheKey' => md5(__CLASS__.__FUNCTION__.$limit.$usePage.$curPage.$selectParams.$condition),
             'useCache' => $useCache,
             'limit' => $limit,
             'cacheTime' => Yii::app()->params['cacheTime']['hour'],

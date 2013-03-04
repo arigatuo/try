@@ -1,12 +1,12 @@
-<?php
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-	'Error',
-);
-?>
-
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
+<div class="errorDiv">
+    <p>
+        <?php echo $code; ?>
+    </p>
 </div>
+<script type="text/javascript">
+    <?php
+        $referUrl = Yii::app()->request->urlReferrer;
+        $jumpUrl = !empty($referUrl) ? $referUrl : Yii::app()->baseUrl;
+     ?>
+    setTimeout("window.location.href='<?php echo $jumpUrl;?>';", 2000);
+</script>

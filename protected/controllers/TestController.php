@@ -16,8 +16,7 @@ class TestController extends Controller{
     }
 
     public function actionLogout(){
-        Yii::app()->user->setState("front_username", "");
-        Yii::app()->user->setState("front_uid", "");
+        MyUcenter::logout();
     }
 
     public function actionFlush(){

@@ -10,6 +10,8 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'试用装后台',
 
+
+    'defaultController'=>'main/Index/home',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -66,11 +68,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+                /*
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+                */
 			),
 		),
         'session' => array (

@@ -12,5 +12,14 @@ return array(
     'Addr Name'=>'姓名',
     'Apply Time'=>'时间',
     'Addr Email'=>'email地址',
+
+    'Article' => '试用报告id',
+    'Item' => '试用品id',
+    'User' => '用户id',
+    'Article Title' => '标题',
+    'Article Content' => '内容',
+    'Item Point' => '试用品打分',
+    'Article Ctime' => '试用报告创建时间',
+
 );
 

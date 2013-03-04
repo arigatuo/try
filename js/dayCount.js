@@ -2,7 +2,6 @@ $(function(){
     var dateTime = new Date();
     var difference = dateTime.getTime() - siteSettings.serverTime * 1000; //客户端与服务器时间偏移量
 
-
     setInterval(function(){
         $(".time").each(function(){
             var obj = $(this);
@@ -27,5 +26,5 @@ $(function(){
                 obj.find(".miao").eq(0).html(0);
             }
         });
-    }, 200); //每个0.1秒执行一次
+    }, 500); //每个0.1秒执行一次
 })

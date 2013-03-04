@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <title>试用装</title>
-    <script type="text/javascript" src="<?php echo Yii::app()->createUrl('/BaseJs/')."?v=".date("YmdHis"); ?>"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->createUrl('/BaseJs/')."?v=".date("YmdH"); ?>"></script>
     <?php
         Yii::app()->clientScript->registerCoreScript('jquery');
     ?>
@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl;?>/css/global.css" />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl;?>/css/baby.css" />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl;?>/css/plus.css" />
+    <script type="text/javascript">
+        $(function(){
+            <?php
+                    if(!empty($this->curUid) && is_numeric($this->curUid)){
+                        echo '$(".afterLogin").show();$(".beforeLogin").hide()';
+                    } else {
+                        echo '$(".afterLogin").hide();$(".beforeLogin").show()';
+                    }
+                ?>
+        })
+    </script>
 </head>
 <body>
     <!--headStart-->
@@ -31,11 +42,11 @@
                 <li><a href="#" target="_blank">网站地图</a></li>
                 <li><a href="#" target="_blank">帮助</a></li>
             </ul>
+            <div class="hidden loginInfo"></div>
             <ul class="site-nav-right">
-                <li class="welcome">您好，<strong>小优</strong> 欢迎来到爱美妈妈</li>
-                <li class="login-reg"><a href="#" target="_blank" class="login">[登录]</a><a href="#" target="_blank" class="reg">[注册]</a></li>
-                <li class="other-login"><a href="#" class="qqlogin">QQ登录</a><a href="#" class="sinalogin">微博登录</a> </li>
-            </ul>
+                <li class="welcome afterLogin">您好，<strong class="loginUsername"><?php echo MyUcenter::getUsernameByUid($this->curUid);?></strong> 欢迎来到爱美妈妈</li>
+                <li class="login-reg beforeLogin hidden"><a href="http://bbs.lady8844.com/logging2012.php?action=login" target="_blank" class="login">[登录]</a><a href="http://bbs.lady8844.com/register2012.php" target="_blank" class="reg">[注册]</a></li>
+                <li class="other-login beforeLogin hidden"><a rel='nofollow' href="http://bbs.lady8844.com/qqconnect/oauth/redirect_to_login2012.php" class="qqlogin">QQ登录</a><a rel='nofollow' href="http://bbs.lady8844.com/api/weibo/index.php" class="sinalogin">微博登录</a> </li> </ul>
         </div>
     </div>
     <div class="logo-quicknav" id="main">

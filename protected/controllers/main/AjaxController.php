@@ -9,6 +9,23 @@ class AjaxController extends Controller
 
 	public $layout = false;
 
+    public function actionUserLogin(){
+        $request = Yii::app()->request;
+        $username = $request->getParam("username");
+        $pwd = $request->getParam("pwd");
+        if(!empty($username) && !empty($pwd)){
+            $loginInfo = MyUcenter::login($username, $pwd);
+            if(!empty($loginInfo))
+                echo json_encode($loginInfo);
+        }
+    }
+
+    public function actionUserLogout(){
+        $logoutInfo = MyUcenter::logout();
+        if(!empty($logoutInfo))
+            echo json_encode($logoutInfo);
+    }
+
     /**
      * xhediotr上传图片附件
      */

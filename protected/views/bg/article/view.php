@@ -21,7 +21,9 @@ $this->menu=array(
 		'article_id',
 		'item_id',
 		'user_id',
+		'article_title',
 		'article_content',
 		'item_point',
+		'article_ctime',
 	),
 )); ?>

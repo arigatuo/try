@@ -21,6 +21,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'article_title'); ?>
+		<?php echo $form->textField($model,'article_title',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'article_content'); ?>
 		<?php echo $form->textArea($model,'article_content',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
@@ -28,6 +33,11 @@
 	<div class="row">
 		<?php echo $form->label($model,'item_point'); ?>
 		<?php echo $form->textField($model,'item_point'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'article_ctime'); ?>
+		<?php echo $form->textField($model,'article_ctime',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row buttons">

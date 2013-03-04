@@ -14,7 +14,7 @@ class MyUcenter extends CController
         include_once('ucenter.php');
     }
 
-    //登录
+    //
     public static function login($username, $password){
         self::init();
 

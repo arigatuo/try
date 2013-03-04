@@ -7,8 +7,13 @@
  * To change this template use File | Settings | File Templates.
  */
 class IndexController extends Controller{
+    public $latestArticle, $curUid;
+
     public function init(){
         $this->layout = "front";
+
+        if(empty($this->curUid))
+            $this->curUid = MyUcenter::getUserId();
     }
 
     /**
@@ -40,6 +45,9 @@ class IndexController extends Controller{
         //todo 读取limit的列表
         $itemList = Item::model()->readList();
 
+        //取得最新试用心得列表
+        $this->getLatestSelectedArticle();
+
         $this->render("home", array(
             'flashContent' => $flashContent,
             'itemList' => $itemList,
@@ -56,7 +64,9 @@ class IndexController extends Controller{
         if(!empty($itemSearch))
             list($itemList, $page) = $itemSearch;
         else
-            throw new CHttpException("server error");
+            throw new CHttpException(404);
+
+        $this->getLatestSelectedArticle();
 
         $this->render("now", array(
             'itemList' => $itemList,
@@ -76,11 +86,13 @@ class IndexController extends Controller{
         if(!empty($itemId) && is_numeric($itemId))
             ;
         else
-            throw new CHttpException("不存在对应试用品");
+            throw new CHttpException(404, Yii::t('msg','item is not exist'));
 
         $curItem = Item::model()->with('brand')->findByPk($itemId);
         if(empty($curItem))
-            throw new CHttpException("不存在对应试用品");
+            throw new CHttpException(404, Yii::t('msg','item is not exist'));
+
+        $this->getLatestSelectedArticle();
 
         //取得用户留言信息
         $curItemApplySearch = Apply::model()->getListByItemId(
@@ -108,18 +120,71 @@ class IndexController extends Controller{
      */
     public function actionArticle(){
         //没有前台登陆 则提示并跳回
-        /*
-        $uid = MyUcenter::getUserId();
-        if(! (!empty($uid) && is_numeric($uid) && $uid > 0) )
-            throw new CHttpException("请先登陆");
-        */
+        $uid = $this->curUid;
+        if(!(!empty($uid) && is_numeric($uid) && $uid > 0) )
+            $this->showMsg(Yii::t('msg','pls login first'));
+
+
+        //判断该用户已获得的试用装
+        $cacheKey = md5(__CLASS__.__FUNCTION__.$uid);
+        $cacheTime = Yii::app()->params['cacheSetting']['5min'];
+        $cacheVal = Yii::app()->cache->get($cacheKey);
+        if(!empty($cacheVal))
+            $haveAnyItems = $cacheVal;
+        else{
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("user_id=:user_id");
+            $criteria->addCondition("apply_status=:apply_status");
+            $criteria->params = array(
+                'user_id' => $uid,
+                'apply_status' => 'selected',
+            );
+            $criteria->select = "item_id";
+            $haveAnyItems = Apply::model()->findAll($criteria);
+            if(!empty($haveAnyItems))
+                Yii::app()->cache->set($cacheKey, $haveAnyItems, $cacheTime);
+        }
+
+        if(!empty($haveAnyItems)){
+            $itemArray = array();
+            foreach($haveAnyItems as $applyRecord){
+                $itemArray[] = $applyRecord->getAttribute("item_id");
+            }
+            $itemStr = join(",",$itemArray);
+            $condition = "`item_id` IN ({$itemStr})";
+            $itemList = Item::model()->readList(100, 1, 0, "item_id,item_name,brand.*", $condition);
+        }else{
+            $this->showMsg(Yii::t('msg','you have not get any items'));
+        }
 
         $model = new Article;
 
-        $this->render("Article");
         if(isset($_POST['Article'])){
-            //todo 判断是否获得试用品否则不能继续填写
+            $purifier = new CHtmlPurifier;
+            $purifierArray = array("article_content", "article_title");
+            foreach($_POST['Apply'] as $k=>$v){
+                if(in_array($k, $purifierArray)){
+                    $_POST['Apply'][$k] = $purifier->purify($v);
+                }
+            }
+
+            $model->Attributes = $_POST['Article'];
+            $model->setAttributes(
+                array('user_id'=>$uid)
+            );
+            if($model->save()){
+                $this->showMsg(Yii::t('msg','success saved, pls wait for review'), Yii::app()->baseUrl);
+            }else{
+                //todo 保存失败了T_T
+            }
         }
+
+
+        $this->render("article", array(
+                'itemList' => $itemList,
+                'model' => $model,
+            )
+        );
     }
 
     /**
@@ -128,24 +193,24 @@ class IndexController extends Controller{
     public function actionApply()
     {
         //没有前台登陆 则提示并跳回
-        $uid = MyUcenter::getUserId();
+        $uid = $this->curUid;
         if(! (!empty($uid) && is_numeric($uid) && $uid > 0) )
-            throw new CHttpException("请先登陆");
+            $this->showMsg(Yii::t('msg','pls login first'));
 
         $request = Yii::app()->request;
         $item_id = $request->getParam("item_id");
 
         //检查是否item_id有效性(是否过期， 是否存在对应item_id
         if(!is_numeric($item_id))
-            throw new CHttpException("404");
+            throw new CHttpException(404);
         $item_exists = Item::model()->countByAttributes(array('item_id'=>$item_id), "`item_status`='online'");
         if(empty($item_exists)){
-            throw new CHttpException("404");
+            throw new CHttpException(404);
         }
 
         $isExists = Apply::model()->countByAttributes(array("user_id"=>$uid, 'item_id'=>$item_id));
         if(!empty($isExists)){
-            throw new CHttpException("您已经申请过这一款试用装了， 请勿重复申请");
+            $this->showMsg(Yii::t('msg','you have applied for this item'));
         }
 
         $model = new Apply;
@@ -191,8 +256,7 @@ class IndexController extends Controller{
                         //todo userDetails记录保存失败log
                     }
                 }
-                //todo 转移到申请后页面
-                die('申请成功');
+                $this->showMsg(Yii::t('msg','success applied, pls wait for review'), Yii::app()->baseUrl);
             }else{
                 //$this->redirect(Yii::app()->createUrl("/main/apply", array("item_id"=>$item_id)));
                 //todo 保存失败后的动作
@@ -203,5 +267,26 @@ class IndexController extends Controller{
             'model' => $model,
             'item_id' => $item_id,
         ));
+    }
+
+    /**
+     * 取得最新6条试用心得
+     * @return array
+     */
+    public function getLatestSelectedArticle(){
+        $this->latestArticle =  Article::model()->getList();
+    }
+
+    /**
+     * 显示错误信息
+     * @param $msg
+     * @param string $url
+     */
+    public function showMsg($msg, $url=""){
+        $this->render("////common/msg", array(
+            'msg'=>$msg,
+            'url'=>$url,
+        ));
+        exit();
     }
 }
