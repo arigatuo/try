@@ -2110,3 +2110,2106 @@ Stack trace:
 REQUEST_URI=/try/main/Index/js/v.js
 HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
 ---
+2013/03/04 09:55:41 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (232)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/04 09:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:57:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:58:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:58:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 09:58:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:31:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:31:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 10:58:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:43:55 [error] [exception.CException] exception 'CException' with message '属性 "Item.findAll" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('findAll')
+#1 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(51): CActiveRecord->__get('findAll')
+#2 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#3 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#6 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#7 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#18 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/article/admin
+---
+2013/03/04 11:45:18 [error] [exception.CException] exception 'CException' with message '属性 "Apply.brand_id" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('brand_id')
+#1 /home/lizhen/lizhen_html/yii/base/CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('brand_id')
+#2 /home/lizhen/lizhen_html/yii/base/CComponent.php(607): eval()
+#3 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CDataColumn.php(139): CComponent->evaluateExpression('Brand::model()-...', Array)
+#4 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Apply))
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#12 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CBaseListView->run()
+#13 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(63): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#15 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#18 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#19 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#27 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#29 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#30 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/article/admin
+---
+2013/03/04 11:45:31 [error] [exception.CException] exception 'CException' with message '属性 "Apply.item_brand_id" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('item_brand_id')
+#1 /home/lizhen/lizhen_html/yii/base/CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('item_brand_id')
+#2 /home/lizhen/lizhen_html/yii/base/CComponent.php(607): eval()
+#3 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CDataColumn.php(139): CComponent->evaluateExpression('Brand::model()-...', Array)
+#4 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Apply))
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#12 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CBaseListView->run()
+#13 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(63): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#15 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#18 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#19 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#27 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#29 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#30 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/article/admin
+---
+2013/03/04 11:56:08 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/04 11:56:31 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/04 11:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 14:33:22 [error] [exception.CException] exception 'CException' with message '属性 "Apply.automakeup_id" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('automakeup_id')
+#1 /home/lizhen/lizhen_html/yii/base/CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('automakeup_id')
+#2 /home/lizhen/lizhen_html/yii/base/CComponent.php(607): eval()
+#3 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CCheckBoxColumn.php(170): CComponent->evaluateExpression('$data->automake...', Array)
+#4 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(138): CCheckBoxColumn->renderDataCellContent(0, Object(Apply))
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#12 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CBaseListView->run()
+#13 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#15 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#18 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#19 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#27 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#29 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#30 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/apply/admin
+---
+2013/03/04 14:33:35 [error] [exception.CException] exception 'CException' with message '属性 "Apply.automakeup_id" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('automakeup_id')
+#1 /home/lizhen/lizhen_html/yii/base/CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('automakeup_id')
+#2 /home/lizhen/lizhen_html/yii/base/CComponent.php(607): eval()
+#3 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CCheckBoxColumn.php(170): CComponent->evaluateExpression('$data->automake...', Array)
+#4 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(138): CCheckBoxColumn->renderDataCellContent(0, Object(Apply))
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#12 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CBaseListView->run()
+#13 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#15 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#18 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#19 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#27 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#29 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#30 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/apply/admin
+---
+2013/03/04 14:33:35 [error] [exception.CException] exception 'CException' with message '属性 "Apply.automakeup_id" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(144): CComponent->__get('automakeup_id')
+#1 /home/lizhen/lizhen_html/yii/base/CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('automakeup_id')
+#2 /home/lizhen/lizhen_html/yii/base/CComponent.php(607): eval()
+#3 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CCheckBoxColumn.php(170): CComponent->evaluateExpression('$data->automake...', Array)
+#4 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(138): CCheckBoxColumn->renderDataCellContent(0, Object(Apply))
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(517): CGridColumn->renderDataCell(0)
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow(0)
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#12 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CBaseListView->run()
+#13 /home/lizhen/lizhen_html/try/protected/views/bg/apply/admin.php(83): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require('/home/lizhen/li...')
+#15 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): CBaseController->renderInternal('/home/lizhen/li...', Array, true)
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(870): CBaseController->renderFile('/home/lizhen/li...', Array, true)
+#17 /home/lizhen/lizhen_html/yii/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#18 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(132): CController->render('admin', Array)
+#19 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ApplyController->actionAdmin()
+#20 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#21 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#23 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#27 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('admin')
+#29 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/admin')
+#30 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#31 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/try/bg/apply/admin
+HTTP_REFERER=http://192.168.0.226/try/bg/apply/admin
+---
+2013/03/04 15:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 15:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 15:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 15:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 16:31:42 [error] [php] Undefined index: Apply (/home/lizhen/lizhen_html/try/protected/views/bg/article/admin.php:46)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(870): ArticleController->renderFile()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(783): ArticleController->renderPartial()
+#2 /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php(132): ArticleController->render()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ArticleController->actionAdmin()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ArticleController->runAction()
+#6 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ArticleController->filterAccessControl()
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(266): ArticleController->runActionWithFilters()
+#12 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ArticleController->run()
+#13 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/article/admin?Article%5Barticle_id%5D=&Article%5Bitem_brand_id%5D=3&Article%5Bitem_id%5D=&Article%5Buser_id%5D=&Article%5Barticle_title%5D=&Article%5Bitem_point%5D=&Article_page=1&ajax=article-grid
+in /home/lizhen/lizhen_html/try/protected/views/bg/article/admin.php (46)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php (132)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/04 17:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/article
+---
+2013/03/04 17:07:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "main/Article"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Article')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/main/Article
+---
+2013/03/04 17:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '不存在对应试用品' in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php:93
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): IndexController->actionDetail()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('Detail')
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/Deta...')
+#6 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/try/main/Index/Detail/item_id/111
+---
+2013/03/04 17:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '不存在对应试用品' in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php:93
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): IndexController->actionDetail()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('Detail')
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/Deta...')
+#6 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/try/main/Index/Detail/item_id/111
+---
+2013/03/04 17:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 17:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/04 17:41:13 [error] [php] Undefined variable: data (/home/lizhen/lizhen_html/try/protected/views/bg/article/view.php:33)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(870): ArticleController->renderFile()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(783): ArticleController->renderPartial()
+#2 /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php(39): ArticleController->render()
+#3 unknown(0): ArticleController->actionView()
+#4 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ArticleController->runAction()
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ArticleController->filterAccessControl()
+#11 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(266): ArticleController->runActionWithFilters()
+#14 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ArticleController->run()
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#16 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/article/view/id/10
+in /home/lizhen/lizhen_html/try/protected/views/bg/article/view.php (33)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php (39)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 11:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:17:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 11:51:22 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:41
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(41): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(41): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 11:51:56 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:46
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 11:52:17 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:46
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 11:52:17 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:46
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 11:52:18 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:46
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 11:52:18 [error] [exception.SoapFault] SoapFault exception: [SOAP-ENV:Server] Function 'add_post' doesn't exist in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:46
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->__call('add_post', Array)
+#1 /home/lizhen/lizhen_html/try/protected/components/BbsSync.php(46): SoapClient->add_post(Array)
+#2 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(34): BbsSync->syncPost()
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionBbsPost()
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('BbsPost')
+#8 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/BbsPost')
+#9 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/try/Test/BbsPost
+---
+2013/03/05 14:26:23 [error] [exception.CException] exception 'CException' with message '缺少参数' in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:53
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(200): BbsSync->syncThread(Array)
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#4 [internal function]: ItemController->actionUpdate('10')
+#5 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#6 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#17 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 14:27:06 [error] [exception.CException] exception 'CException' with message '缺少参数fid' in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:53
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(200): BbsSync->syncThread(Array)
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#4 [internal function]: ItemController->actionUpdate('10')
+#5 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#6 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#17 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 15:11:44 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:11:44 [error] [exception.CException] exception 'CException' with message '缺少参数' in /home/lizhen/lizhen_html/try/protected/components/BbsSync.php:33
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Apply.php(171): BbsSync->syncPost(Array)
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Apply->beforeSave()
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php(80): CActiveRecord->save()
+#4 [internal function]: ApplyController->actionUpdate('5')
+#5 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ApplyController), Array)
+#6 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ApplyController), Object(ReflectionMethod), Array)
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/apply/update...')
+#17 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/try/bg/apply/update/id/5
+HTTP_REFERER=http://192.168.0.226/try/bg/apply/update/id/5
+---
+2013/03/05 15:12:14 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:13:00 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:14:59 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:16:11 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (79)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:58:22 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (233)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 15:58:47 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (233)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 16:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 16:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "hostinfo" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('hostinfo')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('hostinfo')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/hostinfo')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/Test/hostinfo
+---
+2013/03/05 17:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 17:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 17:20:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 17:20:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 17:25:36 [error] [exception.CException] exception 'CException' with message 'TestController 无法找到请求的视图 "////commmon/item_thread".' in /home/lizhen/lizhen_html/yii/web/CController.php:879
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(52): CController->renderPartial('////commmon/ite...')
+#1 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionTestThread()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('TestThread')
+#6 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/TestThread')
+#7 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/try/Test/TestThread
+---
+2013/03/05 17:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/s.png"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('images/s.png')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/images/s.png
+HTTP_REFERER=http://192.168.0.226/try/Test/TestThread
+---
+2013/03/05 17:34:32 [error] [exception.CException] exception 'CException' with message 'Item and its behaviors do not have a method or closure named "renderPartial".' in /home/lizhen/lizhen_html/yii/base/CComponent.php:266
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(226): CComponent->__call('renderPartial', Array)
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CActiveRecord->__call('renderPartial', Array)
+#2 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): Item->renderPartial('////common/item...')
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#4 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#5 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#6 [internal function]: ItemController->actionUpdate('10')
+#7 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#8 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#9 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#18 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#19 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 17:35:15 [error] [exception.CException] exception 'CException' with message 'Item and its behaviors do not have a method or closure named "renderParitial".' in /home/lizhen/lizhen_html/yii/base/CComponent.php:266
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(226): CComponent->__call('renderParitial', Array)
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CActiveRecord->__call('renderParitial', Array)
+#2 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): Item->renderParitial('////common/item...')
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#4 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#5 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#6 [internal function]: ItemController->actionUpdate('10')
+#7 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#8 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#9 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#16 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#18 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#19 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 17:35:26 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "renderPartial".' in /home/lizhen/lizhen_html/yii/base/CComponent.php:266
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CComponent->__call('renderPartial', Array)
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CHttpRequest->renderPartial('////common/item...')
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#5 [internal function]: ItemController->actionUpdate('10')
+#6 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#7 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#18 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 17:35:47 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.CController" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/base/CModule.php(106): CComponent->__get('CController')
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CModule->__get('CController')
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#5 [internal function]: ItemController->actionUpdate('10')
+#6 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#7 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#18 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 17:36:59 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "renderPartial".' in /home/lizhen/lizhen_html/yii/base/CComponent.php:266
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CComponent->__call('renderPartial', Array)
+#1 /home/lizhen/lizhen_html/try/protected/models/Item.php(193): CWebApplication->renderPartial('////common/item...')
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1056): Item->beforeSave()
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(81): CActiveRecord->save()
+#5 [internal function]: ItemController->actionUpdate('10')
+#6 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ItemController), Array)
+#7 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ItemController), Object(ReflectionMethod), Array)
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#15 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#17 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/update/...')
+#18 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/try/bg/item/update/id/10
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/10
+---
+2013/03/05 18:00:58 [warning] [application] Failed to set unsafe attribute "user_id" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ApplyController.php (55)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/05 18:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 18:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 18:15:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 18:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 18:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/05 18:25:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/s.png"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('images/s.png')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/images/s.png
+HTTP_REFERER=http://192.168.0.226/try/bg/item/update/id/11
+---
+2013/03/05 18:50:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/view"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/view')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/2013030
+HTTP_REFERER=http://192.168.0.226/try/bg/item/create
+---
+2013/03/06 09:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 09:59:36 [error] [php] Undefined variable: err (/home/lizhen/lizhen_html/try/protected/components/CommonHelper.php:188)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(287): AjaxController->runAction()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#3 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/protected/components/CommonHelper.php (188)
+in /home/lizhen/lizhen_html/try/protected/controllers/main/AjaxController.php (48)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/06 10:00:16 [error] [php] Undefined variable: err (/home/lizhen/lizhen_html/try/protected/components/CommonHelper.php:188)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(287): AjaxController->runAction()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#3 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/protected/components/CommonHelper.php (188)
+in /home/lizhen/lizhen_html/try/protected/controllers/main/AjaxController.php (48)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/06 10:01:09 [error] [php] Undefined variable: msg (/home/lizhen/lizhen_html/try/protected/components/CommonHelper.php:229)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/lizhen/lizhen_html/yii/web/CController.php(287): AjaxController->runAction()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(266): AjaxController->runActionWithFilters()
+#3 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): AjaxController->run()
+#4 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/main/Ajax/Uploadimg
+in /home/lizhen/lizhen_html/try/protected/components/CommonHelper.php (229)
+in /home/lizhen/lizhen_html/try/protected/controllers/main/AjaxController.php (48)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/06 10:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ClearFlush" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('ClearFlush')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('ClearFlush')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/Helper/Clear...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/bg/Helper/ClearFlush
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/03/06 10:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ClearFlush" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('ClearFlush')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('ClearFlush')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/Helper/Clear...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/bg/Helper/ClearFlush
+HTTP_REFERER=http://192.168.0.226/try/bg/item/admin
+---
+2013/03/06 10:24:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:24:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:24:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---

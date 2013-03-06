@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Item', 'url'=>array('index')),
-	array('label'=>'Create Item', 'url'=>array('create')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,25 +23,28 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Items</h1>
+<h1><?php echo Yii::t('base','Manage');?></h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<?php $form=$this->beginWidget('CActiveForm', array(
+    'id'=>'upload-search-form',
+    'enableAjaxValidation'=>false,
+    'htmlOptions'=>array('enctype' => 'multipart/form-data')
+));
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+$theGridViewId = "item-grid";
+?>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'item-grid',
+    'id'=>$theGridViewId,
+    'selectableRows'=>2,
+    'ajaxUpdate'=>false,
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
+        array(
+            'value' => '$data->item_id',
+            'class' => 'CCheckBoxColumn',
+        ),
 		'item_id',
 		'item_name',
         array(
@@ -78,3 +81,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		),
 	),
 )); ?>
+
+<?php
+echo $this->renderPartial("////common/multiSelect", array(
+    'baseUrl' => Yii::app()->createUrl('bg/Helper/MultiAction'),
+    'selectIdName' => $theGridViewId,
+));
+
+$this->endWidget();
+?>

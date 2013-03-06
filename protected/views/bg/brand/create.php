@@ -5,8 +5,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Brand', 'url'=>array('index')),
-	array('label'=>'Manage Brand', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

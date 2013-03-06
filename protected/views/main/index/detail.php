@@ -42,7 +42,7 @@ alt="<?php echo $curItemName;?>" /></div>
       <div class="details">
         <div class="details-thd">详细介绍</div>
         <div class="details-tbd">
-            <?php echo $curItem->getAttribute("item_intro");?>
+            <?php echo $curItem->getAttribute("item_intro_more");?>
         </div>
     </div>
           <?php if(!empty($selectedApply)) : ?>

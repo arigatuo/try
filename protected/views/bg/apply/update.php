@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Apply', 'url'=>array('index')),
-	array('label'=>'Create Apply', 'url'=>array('create')),
-	array('label'=>'View Apply', 'url'=>array('view', 'id'=>$model->apply_id)),
-	array('label'=>'Manage Apply', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','View'), 'url'=>array('view', 'id'=>$model->apply_id)),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

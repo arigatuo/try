@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
-	array('label'=>'View User', 'url'=>array('view', 'id'=>$model->user_id)),
-	array('label'=>'Manage User', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','View'), 'url'=>array('view', 'id'=>$model->user_id)),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

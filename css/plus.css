@@ -8,3 +8,21 @@
 .hidden{
     display:none
 }
+.errorDiv{
+    margin:0 auto;
+    width:80%;
+    height:500px;
+    text-align:center;
+    vertical-align: middle;
+    font-size:25px;
+    color:black;
+    border:4px solid rgb(249, 87, 83);
+    margin-bottom:10px;
+}
+.errorDiv p{
+    padding-top:50px;
+}
+
+.trying-products .countdown{
+    margin-right:20px;
+}

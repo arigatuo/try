@@ -93,12 +93,23 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
-        //soap设置
+        //后台账号介入soap设置
         'soap_setting' => array(
             //soap server 地址
             'server_url' => 'http://app.lady8844.com/ladygroup/o/main/api/',
             'group_name' => 'try_aimama',
             'group_secret' => '795721997a8a659671e7787437ec3e33',
+        ),
+        //论坛介入soap设置
+        'bbs_soap_setting' => array(
+            'location' => 'http://bbs.imeimama.com/web_service/WebServer.php',
+            'url' => 'WebServer.php'
+        ),
+        //发帖配置
+        'bbs_thread_publish' => array(
+            'username' => 'arigatuo',
+            'uid' => 419358,
+            'fid' => 10,
         ),
         'roles' => array(
             'admin' => 'admin',

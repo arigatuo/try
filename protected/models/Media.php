@@ -66,12 +66,12 @@ class Media extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'media_id' => 'Media',
-			'media_position' => 'Media Position',
-			'media_url' => 'Media Url',
-			'media_photo' => 'Media Photo',
-			'media_text' => 'Media Text',
-			'media_ctime' => 'Media Ctime',
+			'media_id' => Yii::t('base','Media'),
+			'media_position' => Yii::t('base','Media Position'),
+			'media_url' => Yii::t('base','Media Url'),
+			'media_photo' => Yii::t('base','Media Photo'),
+			'media_text' => Yii::t('base','Media Text'),
+			'media_ctime' => Yii::t('base','Media Ctime'),
 		);
 	}
 

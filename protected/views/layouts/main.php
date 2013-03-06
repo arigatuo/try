@@ -29,17 +29,17 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-                array('label'=>'Item', 'url'=>array('bg/item/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Apply', 'url'=>array('bg/apply/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'User', 'url'=>array('bg/user/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Brand', 'url'=>array('bg/brand/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Article', 'url'=>array('bg/article/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'ItemType', 'url'=>array('bg/itemType/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'Media', 'url'=>array('bg/media/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'MediaPosition', 'url'=>array('bg/MediaPosition/admin'),
-                    'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                array('label'=>'试用装', 'url'=>array('bg/item/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'试用装品牌', 'url'=>array('bg/brand/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'试用装类型', 'url'=>array('bg/itemType/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'试用申请', 'url'=>array('bg/apply/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'试用心得', 'url'=>array('bg/article/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'用户', 'url'=>array('bg/user/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'图文设置', 'url'=>array('bg/media/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'图文位设置', 'url'=>array('bg/MediaPosition/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'清空缓存', 'url'=>array('bg/Helper/ClearCache'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'登录', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'注销 ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->

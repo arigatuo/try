@@ -39,7 +39,7 @@ class AjaxController extends Controller
 	}
 
     /**
-     *
+     * flashUpload插件上传ctrl
      */
     public function actionUploadimg(){
 		Yii::import("ext.EAjaxUpload.qqFileUploader");
@@ -64,4 +64,30 @@ class AjaxController extends Controller
 		
 		echo $return;// it's array
 	}
+
+    /**
+     * XhEditor插件上传ctrl
+     */
+    public function actionXhEditorUploadimg(){
+        $uploadSettings = array(
+            'inputName' => 'filedata',
+            //最大上传大小
+            'maxSize' => 1000 * 1024,
+            //允许扩展名
+            'allowExt' => 'jpg,jpeg',
+            //上传目录
+            'attachDir' => 'upload/intro',
+            'dirType' => 1,
+        );
+
+        $upfile=@$_FILES[$uploadSettings['inputName']];
+
+        if(!empty($upfile) && !empty($uploadSettings)){
+            $uploadInfo = CommonHelper::xhEditorUploadImg($upfile, $uploadSettings);
+        }else{
+            $uploadInfo = array('err'=>'upload fail');
+        }
+
+        echo json_encode($uploadInfo);
+    }
 }

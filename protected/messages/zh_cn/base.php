@@ -1,8 +1,27 @@
 <?php
 return array(
+    'Wellcome To :'=>'欢迎访问:',
+    'Copyright &copy;'=>'版权所有&copy;',
+    'Home'=>'主页',
+    'Models'=>'模型',
+    'Guestbook'=>'留言本',
+    'About'=>'关于我们',
+    'Contact'=>'联系我们',
+    'Login'=>'登录',
+    'Logout'=>'注销',
+
+    'Create' => '新建',
+    'Update' => '修改',
+    'Delete' => '删除',
+    'View' => '查看',
+    'Manage' => '总览',
+    'List' => '列表',
+
+    'News'=>'新闻中心',
     'Apply'=>'申请id',
     'User'=>'用户',
     'Item'=>'试用品id',
+    'Item Brand Id' => '品牌',
     'Status'=>'状态',
     'Apply Text'=>'申请理由',
     'Addr Province'=>'省',
@@ -14,12 +33,56 @@ return array(
     'Addr Email'=>'email地址',
 
     'Article' => '试用报告id',
-    'Item' => '试用品id',
+    'Item' => '试用品',
     'User' => '用户id',
     'Article Title' => '标题',
     'Article Content' => '内容',
-    'Item Point' => '试用品打分',
+    'Item Point' => '打分',
     'Article Ctime' => '试用报告创建时间',
 
+    'User' => '用户id',
+    'User Name' => '用户名',
+    'User Detail' => '用户资料',
+    'Is Real User' => '真实用户?',
+
+    'Brand' => '品牌id',
+    'Brand Name' => '品牌名',
+    'Brand Ctime' => '创建时间',
+    'Brand Pic' => '品牌图片',
+
+
+    'Item Type' => '试用装类型id',
+    'Item Type Name' => '试用装类型名',
+
+    'Media' => '图文id',
+    'Media Position' => '图文位',
+    'Media Url' => '图文链接',
+    'Media Photo' => '图片',
+    'Media Text' => '文字',
+    'Media Ctime' => '创建时间',
+
+    'Media Position' => '图文位id',
+    'Media Position Name' => '图文位名',
+
+
+    'Item' => '试用装',
+    'Item Name' => '名称',
+    'Item Brand' => '品牌',
+    'Item Ctime' => '创建时间',
+    'Item Status' => '状态',
+    'Item Start Time' => '开始时间',
+    'Item End Time' => '结束时间',
+    'Item Intro' => '简介',
+    'Item Intro More' => '详细简介',
+    'Item Apply Num Plus' => '额外申请数（伪)',
+    'Item Apply Num' => '申请数',
+    'Item Piece' => '件数',
+    'Item Type Id' => '类型',
+    'Item Prop' => '规格',
+    'Item Piece Left' => '剩余件数',
+    'Item Pic Small' => '小图',
+    'Item Pic Middle' => '中图',
+
+    'Article Status' => '状态',
 );
 

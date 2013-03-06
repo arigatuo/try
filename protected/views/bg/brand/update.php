@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Brand', 'url'=>array('index')),
-	array('label'=>'Create Brand', 'url'=>array('create')),
-	array('label'=>'View Brand', 'url'=>array('view', 'id'=>$model->brand_id)),
-	array('label'=>'Manage Brand', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','View'), 'url'=>array('view', 'id'=>$model->brand_id)),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

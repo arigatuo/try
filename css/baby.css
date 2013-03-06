@@ -378,7 +378,7 @@ a:hover { color:#ff3333 }
 .wad { padding:20px 0 }
 .wad img { border:1px solid #ccc }
 /* 试用装结构 */
-.trycontent { background:#fff; width: 998px; margin: 0 auto; border: solid #E9E9E9; border-width: 0 1px; }
+.trycontent { clear:both; background:#fff; width: 998px; margin: 0 auto; border: solid #E9E9E9; border-width: 0 1px; }
 .trycontent .left { float:left; width:730px; margin-right:9px;}
 .trycontent .right { float:left; width:240px; }
 /* 试用装共用 */
@@ -456,16 +456,18 @@ a:hover { color:#ff3333 }
 .trying-products .sy strong { font-size:24px; font-weight:700; color:#f95753 }
 .trying-products .total span { padding-left:34px; }
 .trying-products .hot span { padding-left:38px; }
-.trying-products .des { width:384px; height:72px; padding:18px 0 0 25px; line-height:24px; color:#9a9a9a }
+.trying-products .des { width:384px; height:72px; padding:18px 0 0 25px; line-height:24px; color:#9a9a9a; overflow:hidden }
 .trying-products .countdown { float:left; padding-left:51px; margin-right:37px; background-position:-195px -279px }
 .trying-products .countdown i { font-weight:700; font-size:24px; font-style:normal; color:#f94e4a }
 .trying-products .applydate { float:left; margin-top:10px; }
 
 .p-pagination { margin-top:25px; text-align:center}
 .pagination-inner {display:inline-block; *display:inline;zoom:1;}
-.p-pagination a{ float:left; padding:3px 8px 1px; border:1px solid #C1C1C1; margin-right:3px; color:#777;}
+.p-pagination li { float:left;}
+.p-pagination li a{ float:left; padding:3px 8px 1px; border:1px solid #C1C1C1; margin-right:3px; color:#777;}
+
 .p-pagination a:hover{ background:#e42900; color:#fff; text-decoration:none}
-.p-pagination .current { color:#fff; background:#e42900}
+.p-pagination .selected a{ color:#fff; background:#e42900}
 
 
 .submitreports { display:block; width:240px; height:75px; margin-top:11px; background-position:0 -114px; text-indent:-9999px; }
@@ -610,8 +612,8 @@ a:hover { color:#ff3333 }
 /* 申请规则及流程页 */
 .rules-processes { overflow:hidden; }
 .rules-processes .thd { width:980px; margin:9px auto 24px; padding-left: 10px; border-top: 4px solid #f95753; border-bottom: 1px solid #FCB1B0; font-size: 24px; font-weight: 700; background: #fee8e8; color: #f95753; }
-.rules-processes .gz { width:718px; height:298px; margin:0 auto; position:relative; background:#FEE3E3; border:1px solid #FFCCCC; }
-.rules-processes .gz .c { background:#fff; margin:9px; height:280px; overflow:hidden; }
+.rules-processes .gz { width:718px; height:182px; margin:0 auto; position:relative; background:#FEE3E3; border:1px solid #FFCCCC; }
+.rules-processes .gz .c { background:#fff; margin:9px; height:164px; overflow:hidden; }
 .rules-processes .gz dl { padding-left:120px; }
 .rules-processes .gz dt { font-size:24px; color:#f95753 }
 .rules-processes .gz dd { font-size:14px; color:#000; }

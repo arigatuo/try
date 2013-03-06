@@ -45,10 +45,10 @@ class Article extends CActiveRecord
 			array('item_id, user_id', 'length', 'max'=>20),
 			array('article_title', 'length', 'max'=>100),
 			array('article_ctime', 'length', 'max'=>10),
-            array('article_status' , 'safe'),
+            array('article_status,item_brand_id,bbs_tid' , 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('article_id, item_id, user_id, article_title, article_content, item_point, article_ctime', 'safe', 'on'=>'search'),
+			array('article_id, item_id, item_brand_id, user_id, article_title, article_content, item_point, article_ctime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,6 +76,8 @@ class Article extends CActiveRecord
 			'article_content' => Yii::t('base','Article Content'),
 			'item_point' => Yii::t('base','Item Point'),
 			'article_ctime' => Yii::t('base','Article Ctime'),
+            'item_brand_id' => Yii::t('base','Item Brand Id'),
+            'article_status' => Yii::t('base', 'Article Status'),
 		);
 	}
 
@@ -90,13 +92,15 @@ class Article extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('article_id',$this->article_id,true);
-		$criteria->compare('item_id',$this->item_id,true);
+		$criteria->compare('article_id',$this->article_id,false);
+        $criteria->compare('item_brand_id',$this->item_brand_id,false);
+		$criteria->compare('item_id',$this->item_id,false);
+        $criteria->compare('article_status',$this->article_status,false);
 		$criteria->compare('user_id',$this->user_id,true);
 		$criteria->compare('article_title',$this->article_title,true);
 		$criteria->compare('article_content',$this->article_content,true);
-		$criteria->compare('item_point',$this->item_point);
-		$criteria->compare('article_ctime',$this->article_ctime,true);
+		$criteria->compare('item_point',$this->item_point, false);
+		$criteria->compare('article_ctime',$this->article_ctime, false);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -106,6 +110,35 @@ class Article extends CActiveRecord
     public function beforeSave(){
         if(empty($this->article_ctime))
             $this->article_ctime = time();
+        if(empty($this->item_brand_id) && !empty($this->item_id)){
+            $brand_id = Item::model()->findByPk($this->item_id)->getAttribute("item_brand_id");
+            $this->item_brand_id = $brand_id;
+        }
+
+        /**
+         * 如果是过审核的心得同步发到论坛
+         */
+        if($this->article_status == "accept" && empty($this->bbs_tid)){
+            $uid = $this->user_id;
+            $username = MyUcenter::getUsernameByUid($uid);
+            if(!empty($uid) && !empty($username)){
+                $checkKey = array("author", "authorid", "subject", "message");
+                $threadInfo = array(
+                    'fid' => Yii::app()->params['bbs_thread_publish']['fid'],
+                    'author' => $username,
+                    'authorid' => $uid,
+                    'subject' => $this->article_title,
+                    'message' => $this->article_content,
+                    'htmlon' => 1,
+                );
+                $newBbsSync = new BbsSync();
+                $tid = $newBbsSync->syncThread($threadInfo);
+                if(!empty($tid) && is_numeric($tid)){
+                    $this->bbs_tid = $tid;
+                }
+            }
+        }
+
         return parent::beforeSave();
     }
 
@@ -114,7 +147,7 @@ class Article extends CActiveRecord
         $criteria->select = "user_id,item_id,article_title";
         $criteria->addCondition("article_status=:article_status");
         $criteria->params = array(
-            'article_status' => 'accept',
+            ':article_status' => 'accept',
         );
         $cacheConfig = array(
             'cacheKey' => md5(__CLASS__.__FUNCTION__),
@@ -126,5 +159,20 @@ class Article extends CActiveRecord
         );
 
         return CacheHelper::getCacheList($cacheConfig);
+    }
+
+
+    /**
+     * 试用报告状态列表
+     * @param string $key
+     * @return array
+     */
+    public function statusList($key=""){
+        $list =  array(
+            'applying' => '申请中',
+            'accept' => '申请通过',
+            'deny' => '忽略',
+        );
+        return !empty($key) && array_key_exists($key, $list) ? $list[$key] : $list;
     }
 }

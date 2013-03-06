@@ -53,10 +53,10 @@ class Apply extends CActiveRecord
             array('addr_name', 'match', 'pattern'=>'/^[\x{4e00}-\x{9fa5}]*$/u', 'message'=>'请输入中文姓名'),
             array('addr_phone', 'match', 'pattern'=>'/^1[0-9]{10}$/u', 'message'=>'请输入正确的电话'),
             array('addr_address', 'length', 'min'=>5),
-            array('apply_text, user_details, apply_status', 'safe'),
+            array('apply_text, user_details, apply_status, item_brand_id, bbs_pid', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('apply_id, user_id, item_id, apply_status, apply_text', 'safe', 'on'=>'search'),
+            array('apply_id, user_id, item_brand_id, item_id, apply_status, apply_text', 'safe', 'on'=>'search'),
         );
 	}
 
@@ -80,6 +80,7 @@ class Apply extends CActiveRecord
 			'apply_id' => Yii::t("base",'Apply'),
 			'user_id' => Yii::t('base','User'),
 			'item_id' => Yii::t('base','Item'),
+            'item_brand_id' => Yii::t('base', 'Item Brand Id'),
 			'apply_status' => Yii::t('base','Status'),
 			'apply_text' => Yii::t('base','Apply Text'),
 			'addr_province' => Yii::t('base','Addr Province'),
@@ -106,6 +107,7 @@ class Apply extends CActiveRecord
 		$criteria->compare('apply_id',$this->apply_id,false);
 		$criteria->compare('user_id',$this->user_id,false);
 		$criteria->compare('item_id',$this->item_id,false);
+        $criteria->compare('item_brand_id',$this->item_brand_id,false);
 		$criteria->compare('apply_status',$this->apply_status,true);
 		$criteria->compare('apply_text',$this->apply_text,true);
 		$criteria->compare('addr_province',$this->addr_province,true);
@@ -131,16 +133,48 @@ class Apply extends CActiveRecord
             'applying' => '申请中',
             'accept' => '申请通过',
             'selected' => '获得试用装',
+            'deny' => '忽略',
         );
         return !empty($key) && array_key_exists($key, $list) ? $list[$key] : $list;
     }
 
     public function beforeSave(){
-        if($this->isNewRecord){
+        if($this->isNewRecord || empty($this->item_brand_id)){
             $this->apply_time = time();
+            $brand_id = Item::model()->findByPk($this->item_id)->getAttribute("item_brand_id");
+            if(!empty($brand_id))
+                $this->item_brand_id = $brand_id;
         }
         if(!is_numeric($this->apply_time))
             $this->apply_time = strtotime($this->apply_time);
+
+        /**
+         * 同步发回复
+         */
+        if(empty($this->bbs_pid) && in_array($this->apply_status, array("selected", "accept"))){
+            $uid = $this->user_id;
+            $username = MyUcenter::getUserNameByUid($uid);
+            if(!empty($uid) && !empty($username)){
+                $curItem = Item::model()->findByPk($this->item_id);
+                $curItemBBSTid = $curItem->getAttribute("bbs_tid");
+
+                if(!empty($curItemBBSTid)){
+                    $postInfo = array(
+                        'tid' => $curItemBBSTid,
+                        'author' => $username,
+                        'authorid' => $uid,
+                        'subject' => '',
+                        'message' => $this->apply_text,
+                    );
+                    $newSync = new BbsSync();
+                    $pid = $newSync->syncPost($postInfo);
+                    if(!empty($pid))
+                        $this->bbs_pid = $pid;
+                }
+            }
+        }
+
+
         return parent::beforeSave();
     }
 
@@ -188,4 +222,5 @@ class Apply extends CActiveRecord
             return CacheHelper::getCacheList($cacheConfig);
         }
     }
+
 }

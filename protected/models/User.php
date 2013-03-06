@@ -65,10 +65,10 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'user_id' => 'User',
-			'user_name' => 'User Name',
-			'user_detail' => 'User Detail',
-			'is_real_user' => 'Is Real User',
+			'user_id' => Yii::t('base','User'),
+			'user_name' => Yii::t('base','User Name'),
+			'user_detail' => Yii::t('base','User Detail'),
+			'is_real_user' => Yii::t('base','Is Real User'),
 		);
 	}
 

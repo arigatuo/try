@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Media', 'url'=>array('index')),
-	array('label'=>'Create Media', 'url'=>array('create')),
-	array('label'=>'Update Media', 'url'=>array('update', 'id'=>$model->media_id)),
-	array('label'=>'Delete Media', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->media_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Media', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','Update'), 'url'=>array('update', 'id'=>$model->media_id)),
+	array('label'=>Yii::t('base','Delete'), 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->media_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

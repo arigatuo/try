@@ -40,9 +40,10 @@ $form = $this->beginWidget('CActiveForm', array(
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jquery.raty.min.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/xheditor/xheditor-1.1.14-zh-cn.min.js"></script>
+
 <script type="text/javascript">
     $(function(){
-        $('#Article_article_content').xheditor({tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('main/Ajax/Uploadimg');?>'});
+        $('#Article_article_content').xheditor({skin:'nostyle',tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('main/Ajax/Uploadimg');?>'});
         $('.score').raty({ score: 4 , starOff : siteSettings.baseUrl+"/images/star-off.png",
             starOn : siteSettings.baseUrl+"/images/star-on.png", scoreName : "Article[item_point]"});
     });

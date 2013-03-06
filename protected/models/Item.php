@@ -52,7 +52,7 @@ class Item extends CActiveRecord
 			array('item_name', 'length', 'max'=>30),
 			array('item_brand_id, item_apply_num_plus, item_apply_num, item_piece', 'length', 'max'=>10),
 			array('item_status', 'length', 'max'=>7),
-			array('item_intro, item_pic_small, item_pic_middle, item_piece_left, item_prop', 'safe'),
+			array('item_intro, item_intro_more, item_pic_small, item_pic_middle, item_piece_left, item_prop, bbs_tid', 'safe'),
             array('item_start_time', 'compare', 'compareAttribute'=>'item_end_time', 'operator'=>'<',
                 'message'=>'试用申请开始时间必须小于结束时间'),
 			// The following rule is used by search().
@@ -80,18 +80,23 @@ class Item extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'item_id' => 'Item',
-			'item_name' => 'Item Name',
-			'item_brand_id' => 'Item Brand',
-			'item_ctime' => 'Item Ctime',
-			'item_status' => 'Item Status',
-			'item_start_time' => 'Item Start Time',
-			'item_end_time' => 'Item End Time',
-			'item_intro' => 'Item Intro',
-			'item_apply_num_plus' => 'Item Apply Num Plus',
-			'item_apply_num' => 'Item Apply Num',
-			'item_piece' => 'Item Piece',
-            'item_type_id' => 'Item Type Id',
+			'item_id' => Yii::t('base','Item'),
+			'item_name' => Yii::t('base','Item Name'),
+			'item_brand_id' => Yii::t('base','Item Brand'),
+			'item_ctime' => Yii::t('base','Item Ctime'),
+			'item_status' => Yii::t('base','Item Status'),
+			'item_start_time' => Yii::t('base','Item Start Time'),
+			'item_end_time' => Yii::t('base','Item End Time'),
+			'item_intro' => Yii::t('base','Item Intro'),
+            'item_intro_more' => Yii::t('base', "Item Intro More"),
+			'item_apply_num_plus' => Yii::t('base','Item Apply Num Plus'),
+			'item_apply_num' => Yii::t('base','Item Apply Num'),
+			'item_piece' => Yii::t('base','Item Piece'),
+            'item_type_id' => Yii::t('base','Item Type Id'),
+            'item_prop' => Yii::t('base','Item Prop'),
+            'item_piece_left' => Yii::t('base','Item Piece Left'),
+            'item_pic_small' => Yii::t('base','Item Pic Small'),
+            'item_pic_middle' => Yii::t('base','Item Pic Middle'),
 		);
 	}
 
@@ -180,6 +185,40 @@ class Item extends CActiveRecord
         if(!empty($this->oldRecord->item_pic_middle) && $this->oldRecord->item_pic_middle != $this->item_pic_middle){
             CommonHelper::unlinkRelationPic($this->oldRecord->item_pic_middle);
         }
+
+        /**
+         * 同步发布帖子到论坛
+         */
+        if(empty($this->bbs_tid) && $this->item_status==="online"){
+            //帖子内容
+            ob_start();
+            Yii::app()->Controller->renderPartial("////common/item_thread", array(
+                'item_intro' => $this->item_intro,
+                'item_title' => $this->item_name,
+                'item_start_time' => $this->item_start_time,
+                'item_end_time' => $this->item_end_time,
+                'item_piece' => $this->item_piece,
+                'item_pic' => Yii::app()->request->hostInfo."/".$this->item_pic_small,
+                'url' => Yii::app()->createUrl('/main/Index/Detail', array('item_id'=>$this->item_id)),
+            ));
+            $threadContent = ob_get_clean();
+
+            $threadInfo = array(
+                'fid' => Yii::app()->params['bbs_thread_publish']['fid'],
+                'author' => Yii::app()->params['bbs_thread_publish']['username'],
+                'authorid' => Yii::app()->params['bbs_thread_publish']['uid'],
+                'subject' => $this->item_name,
+                'message' => $threadContent, //$this->item_intro,
+                'htmlon' => 1,
+            );
+
+            $newSync = new BbsSync();
+            $tid = $newSync->syncThread($threadInfo);
+            if(!empty($tid) && is_numeric($tid)){
+                $this->bbs_tid = $tid;
+            }
+        }
+
         return parent::beforeSave();
     }
 

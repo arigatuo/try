@@ -62,8 +62,6 @@ class MyUcenter extends CController
     public static function isLogin(){
         self::init();
 
-        $r = !empty($_COOKIE['aima_try_auth']);
-
         if(!empty($_COOKIE['aima_try_auth'])){
             list($uid, $username) = explode("\t", uc_authcode($_COOKIE['aima_try_auth'], 'DECODE'));
             if(!empty($uid) && $uid > 0){

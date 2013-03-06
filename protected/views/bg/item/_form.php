@@ -161,6 +161,23 @@
         <?php echo $form->error($model,'item_intro'); ?>
     </div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model, 'item_intro_more'); ?>
+        <?php echo $form->textArea($model, 'item_intro_more'); ?>
+        <?php echo $form->error($model, 'item_intro_more'); ?>
+    </div>
+
+    <?php
+        if(!empty($model->bbs_tid)): ?>
+            <div class="row">
+    <?php
+                echo CHtml::link("【论坛对应帖子】", CommonHelper::returnBbsUrlByTid($model->bbs_tid), array(
+                    'target'=>'_blank',
+                ));
+    ?>
+            </div>
+    <?php endif; ?>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
@@ -168,3 +185,10 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/xheditor/xheditor-1.1.14-zh-cn.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $('#Item_item_intro_more').xheditor({skin:'nostyle',tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('main/Ajax/Uploadimg');?>'});
+    });
+</script>

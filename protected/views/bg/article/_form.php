@@ -45,6 +45,17 @@
 		<?php echo $form->error($model,'article_ctime'); ?>
 	</div>
 
+    <?php
+    if(!empty($model->bbs_tid)): ?>
+        <div class="row">
+            <?php
+            echo CHtml::link("【论坛对应帖子】", CommonHelper::returnBbsUrlByTid($model->bbs_tid), array(
+                'target'=>'_blank',
+            ));
+            ?>
+        </div>
+    <?php endif; ?>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

@@ -64,10 +64,10 @@ class Brand extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'brand_id' => 'Brand',
-			'brand_name' => 'Brand Name',
-			'brand_ctime' => 'Brand Ctime',
-			'brand_pic' => 'Brand Pic',
+			'brand_id' => Yii::t('base','Brand'),
+			'brand_name' => Yii::t('base','Brand Name'),
+			'brand_ctime' => Yii::t('base','Brand Ctime'),
+			'brand_pic' => Yii::t('base','Brand Pic'),
 		);
 	}
 

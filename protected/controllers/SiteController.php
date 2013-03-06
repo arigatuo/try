@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+    public $curUid;
 	/**
 	 * Declares class-based actions.
 	 */
@@ -38,6 +39,9 @@ class SiteController extends Controller
 	public function actionError()
 	{
         $this->layout = "front";
+        if(empty($this->curUid))
+            $this->curUid = MyUcenter::getUserId();
+
 	    if($error=Yii::app()->errorHandler->error)
 	    {
 	    	if(Yii::app()->request->isAjaxRequest)

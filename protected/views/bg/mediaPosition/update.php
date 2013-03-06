@@ -6,10 +6,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List MediaPosition', 'url'=>array('index')),
-	array('label'=>'Create MediaPosition', 'url'=>array('create')),
-	array('label'=>'View MediaPosition', 'url'=>array('view', 'id'=>$model->media_position)),
-	array('label'=>'Manage MediaPosition', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','View'), 'url'=>array('view', 'id'=>$model->media_position)),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 

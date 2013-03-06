@@ -17,7 +17,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('article_content')); ?>:</b>
-	<?php echo CHtml::encode($data->article_content); ?>
+	<?php echo CHtml::decode($data->article_content); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('item_point')); ?>:</b>

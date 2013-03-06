@@ -147,4 +147,85 @@ class CommonHelper
             unlink($realFilePath) && $return = TRUE;
         return $return;
     }
+
+    /**
+     * 根据tid返回爱美妈妈网论坛帖子地址
+     * @param $tid
+     * @return string
+     */
+    public static function returnBbsUrlByTid($tid){
+        return "http://bbs.imeimama.com/thread-{$tid}-1-1.html";
+    }
+
+    /**
+     * xhEditor上传处理
+     * @param $upfile 上传文件参数
+     * @param $uploadSettings 上传设置
+     * @return array
+     */
+    public static function xhEditorUploadImg($upfile, $uploadSettings){
+        $err = $msg = "";
+        if(!is_dir($uploadSettings['attachDir'])){
+            mkdir($uploadSettings['attachDir']);
+        }
+        $tempPath=$uploadSettings['attachDir'].'/'.date("YmdHis").mt_rand(10000,99999).'.tmp';
+
+        if(!isset($upfile))
+            $err='inputName is error';
+        elseif(!empty($upfile['error'])){
+            switch($upfile['error'])
+            {
+                default:
+                    $err = '发生错误';
+            }
+        }
+        elseif(empty($upfile['tmp_name']) || $upfile['tmp_name'] == 'none')
+            $err = '无文件上传';
+        else{
+            move_uploaded_file($upfile['tmp_name'],$tempPath);
+            $localName=$upfile['name'];
+        }
+
+        if(empty($err)){
+            $fileInfo=pathinfo($localName);
+            $extension=$fileInfo['extension'];
+            if(preg_match('/^('.str_replace(',','|',$uploadSettings['allowExt']).')$/i',$extension))
+            {
+                $bytes=filesize($tempPath);
+                if($bytes > $uploadSettings['maxSize'])$err='请不要上传大小超过'.CommonHelper::formatBytes($uploadSettings['maxSize'])
+                    .'的文件';
+                else
+                {
+                    switch($uploadSettings['dirType'])
+                    {
+                        case 1: $attachSubDir = 'day_'.date('ymd'); break;
+                        case 2: $attachSubDir = 'month_'.date('ym'); break;
+                        case 3: $attachSubDir = 'ext_'.$extension; break;
+                    }
+                    $attachDir = $uploadSettings['attachDir'].'/'.$attachSubDir;
+                    if(!is_dir($attachDir))
+                    {
+                        @mkdir($attachDir, 0777);
+                        @fclose(fopen($attachDir.'/index.htm', 'w'));
+                    }
+                    PHP_VERSION < '4.2.0' && mt_srand((double)microtime() * 1000000);
+                    $newFilename=date("YmdHis").mt_rand(1000,9999).'.'.$extension;
+                    $targetPath = $attachDir.'/'.$newFilename;
+
+                    rename($tempPath,$targetPath);
+                    @chmod($targetPath,0755);
+                    //$targetPath=jsonString($targetPath);
+
+                    $msg = array(
+                        'url' => Yii::app()->request->hostInfo."/".Yii::app()->baseUrl."/".$targetPath,
+                        'localname' => $localName,
+                        'id' => '1',
+                    );
+                }
+            }
+            else $err='上传文件扩展名必需为：'.$uploadSettings['allowExt'];
+            @unlink($tempPath);
+        }
+        return array('err'=>$err, 'msg'=>$msg);
+    }
 }

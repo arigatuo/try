@@ -161,10 +161,11 @@ class IndexController extends Controller{
 
         if(isset($_POST['Article'])){
             $purifier = new CHtmlPurifier;
-            $purifierArray = array("article_content", "article_title");
-            foreach($_POST['Apply'] as $k=>$v){
+            //$purifierArray = array("article_content", "article_title");
+            $purifierArray = array( "article_title");
+            foreach($_POST['Article'] as $k=>$v){
                 if(in_array($k, $purifierArray)){
-                    $_POST['Apply'][$k] = $purifier->purify($v);
+                    $_POST['Article'][$k] = $purifier->purify($v);
                 }
             }
 

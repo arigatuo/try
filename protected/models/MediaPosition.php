@@ -61,8 +61,8 @@ class MediaPosition extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'media_position' => 'Media Position',
-			'media_position_name' => 'Media Position Name',
+			'media_position' => Yii::t('base','Media Position'),
+			'media_position_name' => Yii::t('base','Media Position Name'),
 		);
 	}
 

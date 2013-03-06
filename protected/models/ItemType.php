@@ -60,8 +60,8 @@ class ItemType extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'item_type_id' => 'Item Type',
-			'item_type_name' => 'Item Type Name',
+			'item_type_id' => Yii::t('base','Item Type'),
+			'item_type_name' => Yii::t('base','Item Type Name'),
 		);
 	}
 

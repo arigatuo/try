@@ -88,21 +88,6 @@
         </ul>
         <span class="share-left"></span> <span class="share-right"></span>
     </div>
-    <div class="search">
-        <form method="post" action="#">
-            <div class="search-input-wrap">
-                <input type="text" id="searchkeyword" class="search-input" value="输入您要搜索的内容" onBlur="if(this.value==''){this.value='输入您要搜索的内容';}" onFocus="if(this.value=='输入您要搜索的内容'){this.value='';}" onKeyPress="Javascript:if(event.keyCode==13){window.open('http://www.imeimama.com/search.htm?keyword='+encodeURI(document.getElementById('searchkeyword').value)+'&amp;site=imeimama.com');return false;}"/>
-            </div>
-            <input type="button" class="search-submit" onClick="javascript:window.open('http://www.imeimama.com/search.htm?keyword='+encodeURI(document.getElementById('searchkeyword').value)+'&amp;site=imeimama.com');return false;"/>
-        </form>
-        <div class="hot-search">
-            <a href="http://edu.imeimama.com/brain/20130118/1157526.html" target="_blank">胎教十个最重要时刻 </a>
-            <a href="http://yuer.imeimama.com/xueqian/20120829/1069353.html" target="_blank"> 潮流打扮危害宝宝健康 </a>
-            <a href="http://yuer.imeimama.com/yinger/20120111/956349.html" target="_blank">让宝宝远离甲流</a>
-            <a href="http://xinma.imeimama.com/xse/20130116/1155796.html" target="_blank">新生儿赶春运的注意事项</a>
-            <a href="http://huaiyun.imeimama.com/yunqi/20130116/1155784.html" target="_blank">空气污染对母婴危害大</a>
-        </div>
-    </div>
     <!--headEnd-->
 
     <div class="trycontent">
@@ -117,7 +102,8 @@
                     <li class="<?php echo !empty($tabClass['now']) ? $tabClass['now']:"";?>"><a href="<?php echo Yii::app()->createUrl("/main/Index/now")?>" >正在试用</a></li>
                     <li class="<?php echo !empty($tabClass['article']) ? $tabClass['article'] : "";?>"><a href="<?php echo Yii::app()->createUrl ("/main/Index/article") ?>">提交报告</a></li>
                     <li class="<?php echo !empty($tabClass['rule']) ? $tabClass['rule'] : "";?>"><a href="<?php echo Yii::app()->createUrl("/main/Index/rule")?>">试用规则</a></li>
-                    <li><a href="#" target="_blank">试用论坛</a></li>
+                    <li><a href="http://bbs.imeimama.com/" target="_blank">试用论坛</a></li>
+
                 </ul>
             </div>
         </div>

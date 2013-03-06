@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Item', 'url'=>array('index')),
-	array('label'=>'Create Item', 'url'=>array('create')),
-	array('label'=>'Update Item', 'url'=>array('update', 'id'=>$model->item_id)),
-	array('label'=>'Delete Item', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->item_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Item', 'url'=>array('admin')),
+	array('label'=>Yii::t('base','List'), 'url'=>array('index')),
+	array('label'=>Yii::t('base','Create'), 'url'=>array('create')),
+	array('label'=>Yii::t('base','Update'), 'url'=>array('update', 'id'=>$model->item_id)),
+	array('label'=>Yii::t('base','Delete'), 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->item_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('base','Manage'), 'url'=>array('admin')),
 );
 ?>
 
@@ -29,5 +29,10 @@ $this->menu=array(
 		'item_apply_num_plus',
 		'item_apply_num',
 		'item_piece',
+        array(
+            'name' => 'bbs_tid',
+            'value' => !empty($model->bbs_tid) ? CHtml::link('对应论坛帖子',CommonHelper::returnBbsUrlByTid($model->bbs_tid), array('target'=>'_blank')) : '',
+            'type' => 'raw'
+        ),
 	),
 )); ?>
