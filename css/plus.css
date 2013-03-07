@@ -26,3 +26,13 @@
 .trying-products .countdown{
     margin-right:20px;
 }
+
+.trying-products .des { width:384px; height:72px; padding:18px 0 0 25px; line-height:24px; color:#9a9a9a; overflow:hidden }
+
+.details-tbd{
+    overflow:hidden
+}
+
+.box2 .region .Mprovince { float:left; margin-right:8px; }
+/*.box2 .region .Mprovince .mod-option { height:312px; overflow-x:hidden; overflow-y:scroll; }*/
+.box2 .region .Mcity { float:left; }

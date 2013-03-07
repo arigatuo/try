@@ -118,7 +118,7 @@ class Article extends CActiveRecord
         /**
          * 如果是过审核的心得同步发到论坛
          */
-        if($this->article_status == "accept" && empty($this->bbs_tid)){
+        if(!empty(Yii::app()->params['bbs_sync'])  && $this->article_status == "accept" && empty($this->bbs_tid)){
             $uid = $this->user_id;
             $username = MyUcenter::getUsernameByUid($uid);
             if(!empty($uid) && !empty($username)){
@@ -144,7 +144,7 @@ class Article extends CActiveRecord
 
     public function getList($useCache = 1, $limit = 6){
         $criteria = new CDbCriteria();
-        $criteria->select = "user_id,item_id,article_title";
+        $criteria->select = "user_id,item_id,article_title,bbs_tid";
         $criteria->addCondition("article_status=:article_status");
         $criteria->params = array(
             ':article_status' => 'accept',

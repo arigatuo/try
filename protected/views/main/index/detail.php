@@ -2,14 +2,9 @@
     $curItemName = $curItem->brand->getAttribute("brand_name")." ".$curItem->getAttribute("item_name") ." " .$curItem->getAttribute("item_prop");
 ?>
 <div class="banner">
-    <?php if(!empty($topPic)) :
-                foreach($topPic as $pic) : ?>
-                    <a href="<?php echo $pic->getAttribute('media_url');?>" target="_blank">
-                        <img src="<?php echo $pic->getAttribute('media_photo');?>" width="980" height="200"
-                             alt="<?php echo $pic->getAttribute("media_text");?>" />
-                    </a>
-    <?php       endforeach;
-            endif; ?>
+    <a href="javascript:void(0)">
+        <img src="<?php echo $curItem->getAttribute('item_pic_banner');?>" width="980" height="200"  />
+    </a>
 </div>
   <div class="trymain fn-clear">
     <div class="left">
@@ -26,13 +21,13 @@ alt="<?php echo $curItemName;?>" /></div>
               <div class="suliang">数量<strong><?php echo $curItem->getAttribute("item_piece");?>份</strong></div>
               <div class="guige">规格<strong><?php echo $curItem->getAttribute("item_prop");?></strong></div>
             </div>
-            <form>
+            <form id="apply_form" name="apply_form" action="<?php echo Yii::app()->createUrl("/main/Index/apply", array("item_id"=>$curItem->getAttribute("item_id")));?>" method="POST">
               <div class="txtarea-wrap">
                 <div class="txtarea-thd">申请留言：</div>
-                <textarea class="txtarea"></textarea>
+                <textarea class="txtarea" name="apply_msg"></textarea>
               </div>
               <div class="apply-baogao fn-clear">
-                  <a href="<?php echo Yii::app()->createUrl("/main/Index/apply", array("item_id"=>$curItem->getAttribute("item_id")));?>" class="apply" title="我要申请">我要申请</a>
+                  <a href="javascript:$('#apply_form').submit();" class="apply" title="我要申请">我要申请</a>
                   <a href="<?php echo Yii::app()->createUrl("/main/Index/Article", array('item_id'=>$curItem->getAttribute("item_id")))?>"  class="baogao">提交报告</a>
               </div>
             </form>

@@ -3,7 +3,7 @@
         <div class="thd"></div>
         <div class="tbd">
 
-                    <div  class="afterLogin user-loginout fn-clear"> <a href="javascript:void(0)" class="pic"><img id="loginUserHead" src="<?php echo MyUcenter::getUserHeadByUid($this->curUid);?>" width="80" height="80" /></a>
+                    <div  class="afterLogin user-loginout fn-clear hidden"> <a href="javascript:void(0)" class="pic"><img id="loginUserHead" src="<?php echo MyUcenter::getUserHeadByUid($this->curUid);?>" width="80" height="80" /></a>
                         <div class="txt">
                             <div class="welcome">欢迎您，</div>
                             <div class="username"><a href="javascript:void(0)" class="loginUsername"><?php echo MyUcenter::getUsernameByUid($this->curUid)?></a></div>
@@ -16,10 +16,10 @@
                             <div class="user-login fn-clear">
                                 <ul class="user-login-left">
                                     <li class="mb fn-clear"> <label for="username">账号：</label><span><input type="text" name="username" id="username" class="logkuang" /></span></li>
-                                    <li class="fn-clear"> <label for="pwd">密码：</label><span><input type="password" value="" name="pwd" id="pwd" class="logkuang" /></li></span></ul>
+                                    <li class="fn-clear"> <label for="pwd">密码：</label><span><input type="password" value="" name="pwd" id="pwd" class="logkuang" /></span></li></ul>
                                 <div class="user-login-right"><button type="button" id="loginSubmit" class="submit"></button></div>
                             </div>
-                            <p class="user-tips"><a href="http://bbs.lady8844.com/register2012.php" target="_blank" class="register">注册新用户</a><a href="http://bbs.lady8844.com/logging.php?action=login&todo=password" target="_blank" class="forget">忘记密码</a></p>
+                            <p class="user-tips"><a href="http://bbs.imeimama.com/register.php" target="_blank" class="register">注册新用户</a><a href="http://bbs.imeimama.com/logging.php?action=login&s=0" target="_blank" class="forget">忘记密码</a></p>
                         </form>
                     </div>
             <div class="baidu-share">
@@ -33,14 +33,20 @@
         </div>
     </div>
     <a href="<?php echo Yii::app()->createUrl("/main/Index/Article")?>" class="submitreports" title="提交试用报告">提交试用报告</a>
+    <?php if(!empty($this->latestArticle)) : ?>
     <div class="trialreport">
         <div class="thd">最新试用报告</div>
         <ul class="tbd">
             <?php
-                    if(!empty($this->latestArticle)) :
                         foreach($this->latestArticle as $article) :
                             $theUid = $article->getAttribute("user_id");
-                            $itemUrl = Yii::app()->createUrl("/main/Index/Detail", array("item_id"=>$article->getAttribute("item_id")));
+                            $theBbsTid = $article->getAttribute("bbs_tid");
+                            /*
+                            if(!empty($theBbsTid))
+                                $itemUrl = CommonHelper::returnBbsUrlByTid($theBbsTid);
+                            else
+                            */
+                                $itemUrl = Yii::app()->createUrl("/main/Index/Detail", array("item_id"=>$article->getAttribute("item_id")));
              ?>
             <li> <a href="javascript:void(0)" class="pic"><img src="<?php echo MyUcenter::getUserHeadByUid($theUid)?>"  width="48" height="48" alt="<?php echo MyUcenter::getUsernameByUid($theUid);?>" /></a>
                 <div class="txt">
@@ -52,10 +58,10 @@
                     <p><span class="name"><?php echo MyUcenter::getUsernameByUid($theUid)?></span><span class="tj"></span></p>
                 </div>
             </li>
-            <?php       endforeach;
-                    endif; ?>
+            <?php       endforeach; ?>
         </ul>
     </div>
+    <?php endif; ?>
     <div class="trialules">
         <div class="thd">试用规则</div>
         <div class="tbd">

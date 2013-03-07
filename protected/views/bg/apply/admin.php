@@ -63,6 +63,11 @@ $theGridViewId = "apply-grid";
             'filter' => Apply::model()->statusList(),
         ),
 		'apply_text',
+        'addr_name',
+        'addr_phone',
+        'addr_city',
+        'addr_province',
+        'addr_address',
 		array(
 			'class'=>'CButtonColumn',
 		),

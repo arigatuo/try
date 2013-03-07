@@ -123,6 +123,28 @@
         <?php echo $form->error($model, 'item_pic_middle'); ?>
     </div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model, 'item_pic_banner'); ?>
+        <?php $this->widget('ext.EAjaxUpload.EAjaxUpload',
+            array(
+                'id'=>'uploadpic3',
+                'config'=>array(
+                    'action'=>Yii::app()->createUrl('bg/Ajax/Uploadimg'),
+                    'allowedExtensions'=>array("jpg"),//array("jpg","jpeg","gif","exe","mov" and etc...
+                    'sizeLimit'=>1*1024*1024,// maximum file size in bytes
+                    'onComplete'=>"js:function(id, fileName, responseJSON){
+				                    photoUrl = siteSettings.baseUrl + responseJSON.folder+responseJSON .filename;
+									jQuery('#Item_item_pic_banner').val(photoUrl);
+									preview_image();
+                                }",
+                )
+            ));
+        ?>
+        <?php echo $form->textField($model,'item_pic_banner',array('size'=>30,'maxlength'=>30,
+            'class'=>'item_photo')); ?>
+        <?php echo $form->error($model, 'item_pic_banner'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'item_apply_num_plus'); ?>
 		<?php echo $form->textField($model,'item_apply_num_plus',array('size'=>10,'maxlength'=>10)); ?>
@@ -189,6 +211,6 @@
 
 <script type="text/javascript">
     $(function(){
-        $('#Item_item_intro_more').xheditor({skin:'nostyle',tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('main/Ajax/Uploadimg');?>'});
+        $('#Item_item_intro_more').xheditor({skin:'nostyle',tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('bg/Ajax/XhEditorUploadimg');?>'});
     });
 </script>

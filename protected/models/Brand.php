@@ -113,6 +113,18 @@ class Brand extends CActiveRecord
 
     public function beforeDelete(){
         !empty($this->brand_pic) && CommonHelper::unlinkRelationPic($this->brand_pic);
+        //删除相关品牌下的items
+        $followItems = Item::model()->findAllByAttributes(
+            array(
+                'item_brand_id' => $this->brand_id
+            )
+        );
+        if(!empty($followItems)){
+            foreach($followItems as $item){
+                $item->delete();
+            }
+        }
+
         return parent::beforeDelete();
     }
 

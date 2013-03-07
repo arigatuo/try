@@ -31,7 +31,7 @@
 			'items'=>array(
                 array('label'=>'试用装', 'url'=>array('bg/item/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'试用装品牌', 'url'=>array('bg/brand/admin'), 'visible'=>!Yii::app()->user->isGuest),
-                array('label'=>'试用装类型', 'url'=>array('bg/itemType/admin'), 'visible'=>!Yii::app()->user->isGuest),
+                //array('label'=>'试用装类型', 'url'=>array('bg/itemType/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'试用申请', 'url'=>array('bg/apply/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'试用心得', 'url'=>array('bg/article/admin'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'用户', 'url'=>array('bg/user/admin'), 'visible'=>!Yii::app()->user->isGuest),

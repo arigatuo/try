@@ -112,7 +112,7 @@ class Apply extends CActiveRecord
 		$criteria->compare('apply_text',$this->apply_text,true);
 		$criteria->compare('addr_province',$this->addr_province,true);
 		$criteria->compare('addr_city',$this->addr_city,true);
-		$criteria->compare('addr_phone',$this->addr_phone,false);
+		$criteria->compare('addr_phone',$this->addr_phone,true);
 		$criteria->compare('addr_address',$this->addr_address,true);
 		$criteria->compare('addr_name',$this->addr_name,true);
 		$criteria->compare('apply_time',$this->apply_time,true);
@@ -151,7 +151,7 @@ class Apply extends CActiveRecord
         /**
          * 同步发回复
          */
-        if(empty($this->bbs_pid) && in_array($this->apply_status, array("selected", "accept"))){
+        if(!empty(Yii::app()->params['bbs_sync']) && empty($this->bbs_pid) && in_array($this->apply_status, array("selected", "accept"))){
             $uid = $this->user_id;
             $username = MyUcenter::getUserNameByUid($uid);
             if(!empty($uid) && !empty($username)){

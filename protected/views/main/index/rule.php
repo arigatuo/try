@@ -7,8 +7,6 @@
  * To change this template use File | Settings | File Templates.
  */
 ?>
-<script src="js/jquery.switchable-2.0.min.js" type="text/javascript"></script>
-<script src="js/v.js" type="text/javascript"></script>
 <div class="trycontent">
     <div class="rules-processes">
         <div class="thd">申请规则及流程</div>
@@ -59,3 +57,5 @@
         </div>
     </div>
 </div>
+<script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.switchable-2.0.min.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->baseUrl;?>/js/v.js" type="text/javascript"></script>

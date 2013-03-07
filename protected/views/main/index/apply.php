@@ -30,9 +30,14 @@
     <dl class="mod-list dlly fn-clear">
         <dt><span class="bt">*</span></dt>
         <dd>
+            <?php
+                $apply_msg = Yii::app()->request->getParam("apply_msg");
+                if(!empty($apply_msg)){
+                    $model->apply_text = $apply_msg;
+                }
+            ?>
             <?php echo $form->textArea($model,'apply_text',array('rows'=>6, 'cols'=>50)); ?>
             <?php echo $form->error($model,'apply_text'); ?>
-
         </dd>
     </dl>
 </div>
@@ -54,16 +59,14 @@
             <?php echo $form->error($model, 'addr_phone'); ?>
         </dd>
     </dl>
-    <dl class="mod-list region fn-clear">
+    <dl class="mod-list region fn-clear"  id="citySelect">
         <dt><span class="bt">*</span>所在地区</dt>
-        <div id="citySelect">
-            <dd>
-                <select class="prov mod-input" name="Apply[addr_province]" id="apply_addr_province"></select>
+            <dd class="Mprovince">
+                <select class="prov" name="Apply[addr_province]" id="apply_addr_province"></select>
             </dd>
-            <dd>
-                <select class="city mod-input" name="Apply[addr_city]" id="apply_addr_city"></select>
+            <dd class="Mcity">
+                <select class="city" name="Apply[addr_city]" id="apply_addr_city"></select>
             </dd>
-        </div>
     </dl>
     <dl class="mod-list address fn-clear">
         <dt><span class="bt">*</span>联系地址</dt>

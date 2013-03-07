@@ -38,19 +38,20 @@ class CacheHelper{
         if(!empty($cacheVal) && $useCache){
             $resultList = $cacheVal;
         }else{
+            $theModel = new $cacheConfig['modelName'];
             if($findAll){
                 if(!empty($usePage)){
-                    $count = $cacheConfig['modelName']::model()->count($criteria);
+                    $count = $theModel->count($criteria);
                     $pages = new CPagination($count);
                     $pages->pageSize = $usePage;
                     $pages->applyLimit($criteria);
                 }
-                $resultList = $cacheConfig['modelName']::model()->findAll($criteria);
+                $resultList = $theModel->findAll($criteria);
 
                 if(!empty($usePage))
                     $resultList = array($resultList, $pages);
             }else{
-                $resultList = $cacheConfig['modelName']::model()->find($criteria);
+                $resultList = $theModel->find($criteria);
             }
 
             if(!empty($resultList))

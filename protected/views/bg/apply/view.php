@@ -23,5 +23,11 @@ $this->menu=array(
 		'item_id',
 		'apply_status',
 		'apply_text',
+        'addr_name',
+        'addr_phone',
+        'addr_city',
+        'addr_province',
+        'addr_address',
+        'addr_email',
 	),
 )); ?>

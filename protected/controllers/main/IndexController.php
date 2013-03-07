@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 class IndexController extends Controller{
-    public $latestArticle, $curUid;
+    public $latestArticle, $curUid, $titleInfo;
 
     public function init(){
         $this->layout = "front";
@@ -33,6 +33,10 @@ class IndexController extends Controller{
      * 规则页
      */
     public function actionRule(){
+        $this->titleInfo = array(
+            'title' => '试用规则-免费试用-爱美妈妈网',
+            'keywords' => '免费试用,试用装,免费试用母婴用品,母婴用品试用装,试用规则,申请试用规则',
+        );
         $this->render("rule");
     }
 
@@ -40,9 +44,14 @@ class IndexController extends Controller{
      * 首页
      */
     public function actionHome(){
+        $this->titleInfo = array(
+            'title' => '免费试用-爱美妈妈网',
+            'keywords' => '免费试用,试用装,免费试用母婴用品,母婴用品试用装,试用频道,试用心得,试用感受',
+            'description' => '爱美妈妈网母婴用品免费试用平台，可免费领取试用装，我们为您提供奶粉免费试用、婴幼儿洗护品免费试用，还有多种母婴产品，等你来拿',
+        );
+
         //读取flash
         $flashContent = Media::model()->readList("homepage_flash", 5);
-        //todo 读取limit的列表
         $itemList = Item::model()->readList();
 
         //取得最新试用心得列表
@@ -58,8 +67,12 @@ class IndexController extends Controller{
      * 列表页
      */
     public function actionNow(){
-        //todo  修改列表页分页每页个数
-        $perPage = 1;
+        $this->titleInfo = array(
+            'title' => '正在试用-免费试用-爱美妈妈网',
+            'keywords' => '免费试用,试用装,免费试用母婴用品,母婴用品试用装,试用频道',
+        );
+
+        $perPage = 10;
         $itemSearch = Item::model()->readList(0, 1, $perPage);
         if(!empty($itemSearch))
             list($itemList, $page) = $itemSearch;
@@ -78,8 +91,8 @@ class IndexController extends Controller{
      * 详细页
      */
     public function actionDetail(){
-        //todo 修改留言分页
-        $perPage = 1;
+
+        $perPage = 10;
 
         //取得单品资料
         $itemId = Yii::app()->request->getParam("item_id");
@@ -100,11 +113,16 @@ class IndexController extends Controller{
         );
         list($curItemApply, $page) = $curItemApplySearch;
 
+
         //取得获得试用品的用户
         $selectedApply = Apply::model()->getListByItemId($itemId, "user_id", array("selected"), 6);
 
         //取得头图
-        $topPic = Media::model()->readList("detail_top_pic", 1);
+        //$topPic = Media::model()->readList("detail_top_pic", 1);
+
+        $this->titleInfo = array(
+            'title' => $curItem->brand->brand_name.$curItem->item_name.'-免费试用-爱美妈妈网',
+        );
 
         $this->render("detail", array(
             'curItem' => $curItem,
@@ -193,13 +211,14 @@ class IndexController extends Controller{
      */
     public function actionApply()
     {
+        $request = Yii::app()->request;
+        $item_id = $request->getParam("item_id");
+
         //没有前台登陆 则提示并跳回
         $uid = $this->curUid;
         if(! (!empty($uid) && is_numeric($uid) && $uid > 0) )
-            $this->showMsg(Yii::t('msg','pls login first'));
+            $this->showMsg(Yii::t('msg','pls login first'), Yii::app()->createUrl("/main/Index/Detail", array('item_id'=>$item_id)));
 
-        $request = Yii::app()->request;
-        $item_id = $request->getParam("item_id");
 
         //检查是否item_id有效性(是否过期， 是否存在对应item_id
         if(!is_numeric($item_id))
@@ -211,7 +230,7 @@ class IndexController extends Controller{
 
         $isExists = Apply::model()->countByAttributes(array("user_id"=>$uid, 'item_id'=>$item_id));
         if(!empty($isExists)){
-            $this->showMsg(Yii::t('msg','you have applied for this item'));
+            $this->showMsg(Yii::t('msg','you have applied for this item'), Yii::app()->createUrl("/"));
         }
 
         $model = new Apply;
@@ -238,7 +257,7 @@ class IndexController extends Controller{
             if($model->save()){
                 if(!empty($_POST['Apply']['userDetails'])){
                     //保存用户喜好数据
-                    $userDetailsSerialize = serialize( $_POST['Apply']['userDetails'] );
+                    $userDetailsSerialize = serialize( $_POST['Apply'] );
                     $theUser = User::model()->findByAttributes(array("user_id"=>$uid));
                     if(!empty($theUser)){
                         $theUser->setAttribute("user_detail", $userDetailsSerialize);

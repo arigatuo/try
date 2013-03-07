@@ -4213,3 +4213,455 @@ Stack trace:
 REQUEST_URI=/try/main/Index/js/v.js
 HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
 ---
+2013/03/06 10:54:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 10:54:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 11:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 11:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 11:21:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 12:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/j...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/jquery.switchable-2.0.min.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 12:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "js" 动作.' in /home/lizhen/lizhen_html/yii/web/CController.php:484
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CController.php(271): CController->missingAction('js')
+#1 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('js')
+#2 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('main/Index/js/v...')
+#3 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/try/main/Index/js/v.js
+HTTP_REFERER=http://192.168.0.226/try/main/Index/rule
+---
+2013/03/06 14:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:12:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg"。' in /home/lizhen/lizhen_html/yii/web/CWebApplication.php:280
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('upload/20130226...')
+#1 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg
+HTTP_REFERER=http://192.168.0.226/try/bg/brand/admin
+---
+2013/03/06 14:17:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php:144
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/controllers/bg/ArticleController.php(72): ArticleController->loadModel('17')
+#1 [internal function]: ArticleController->actionUpdate('17')
+#2 /home/lizhen/lizhen_html/yii/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#3 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('update')
+#13 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/article/upda...')
+#14 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/try/bg/article/update/id/17
+HTTP_REFERER=http://192.168.0.226/try/bg/article/admin
+---
+2013/03/06 17:06:02 [error] [php] include(item_pic_banner.php): failed to open stream: No such file or directory (/home/lizhen/lizhen_html/yii/YiiBase.php:418)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/validators/CValidator.php(171): import()
+#1 /home/lizhen/lizhen_html/yii/base/CModel.php(285): createValidator()
+#2 /home/lizhen/lizhen_html/yii/base/CModel.php(259): Item->createValidators()
+#3 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1758): Item->getValidators()
+#4 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1205): activeInputField()
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CDataColumn.php(105): activeTextField()
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(450): CDataColumn->renderFilterCell()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#9 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#13 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CGridView->run()
+#15 /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php(83): ItemController->widget()
+#16 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require()
+#17 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): ItemController->renderInternal()
+#18 /home/lizhen/lizhen_html/yii/web/CController.php(870): ItemController->renderFile()
+#19 /home/lizhen/lizhen_html/yii/web/CController.php(783): ItemController->renderPartial()
+#20 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(133): ItemController->render()
+#21 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionAdmin()
+#22 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#23 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ItemController->runAction()
+#24 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#25 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#26 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ItemController->filterAccessControl()
+#27 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#29 /home/lizhen/lizhen_html/yii/web/CController.php(266): ItemController->runActionWithFilters()
+#30 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ItemController->run()
+#31 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#32 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#33 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/item/admin
+in /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php (83)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (133)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/06 17:08:12 [error] [php] include(item_pic_banner.php): failed to open stream: No such file or directory (/home/lizhen/lizhen_html/yii/YiiBase.php:418)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/validators/CValidator.php(171): import()
+#1 /home/lizhen/lizhen_html/yii/base/CModel.php(285): createValidator()
+#2 /home/lizhen/lizhen_html/yii/base/CModel.php(259): Item->createValidators()
+#3 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1758): Item->getValidators()
+#4 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1205): activeInputField()
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CDataColumn.php(105): activeTextField()
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(450): CDataColumn->renderFilterCell()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#9 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#13 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CGridView->run()
+#15 /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php(83): ItemController->widget()
+#16 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require()
+#17 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): ItemController->renderInternal()
+#18 /home/lizhen/lizhen_html/yii/web/CController.php(870): ItemController->renderFile()
+#19 /home/lizhen/lizhen_html/yii/web/CController.php(783): ItemController->renderPartial()
+#20 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(133): ItemController->render()
+#21 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionAdmin()
+#22 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#23 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ItemController->runAction()
+#24 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#25 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#26 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ItemController->filterAccessControl()
+#27 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#29 /home/lizhen/lizhen_html/yii/web/CController.php(266): ItemController->runActionWithFilters()
+#30 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ItemController->run()
+#31 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#32 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#33 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/item/admin
+in /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php (83)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (133)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/06 17:08:13 [error] [php] include(item_pic_banner.php): failed to open stream: No such file or directory (/home/lizhen/lizhen_html/yii/YiiBase.php:418)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/validators/CValidator.php(171): import()
+#1 /home/lizhen/lizhen_html/yii/base/CModel.php(285): createValidator()
+#2 /home/lizhen/lizhen_html/yii/base/CModel.php(259): Item->createValidators()
+#3 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1758): Item->getValidators()
+#4 /home/lizhen/lizhen_html/yii/web/helpers/CHtml.php(1205): activeInputField()
+#5 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CDataColumn.php(105): activeTextField()
+#6 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#7 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(450): CDataColumn->renderFilterCell()
+#8 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(428): CGridView->renderFilter()
+#9 /home/lizhen/lizhen_html/yii/zii/widgets/grid/CGridView.php(398): CGridView->renderTableHeader()
+#10 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#13 /home/lizhen/lizhen_html/yii/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#14 /home/lizhen/lizhen_html/yii/web/CBaseController.php(174): CGridView->run()
+#15 /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php(83): ItemController->widget()
+#16 /home/lizhen/lizhen_html/yii/web/CBaseController.php(127): require()
+#17 /home/lizhen/lizhen_html/yii/web/CBaseController.php(96): ItemController->renderInternal()
+#18 /home/lizhen/lizhen_html/yii/web/CController.php(870): ItemController->renderFile()
+#19 /home/lizhen/lizhen_html/yii/web/CController.php(783): ItemController->renderPartial()
+#20 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(133): ItemController->render()
+#21 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionAdmin()
+#22 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#23 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ItemController->runAction()
+#24 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#25 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#26 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ItemController->filterAccessControl()
+#27 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#28 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#29 /home/lizhen/lizhen_html/yii/web/CController.php(266): ItemController->runActionWithFilters()
+#30 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ItemController->run()
+#31 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#32 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#33 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/item/admin
+in /home/lizhen/lizhen_html/try/protected/views/bg/item/admin.php (83)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (133)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 09:51:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '16' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `try_item` (`item_status`, `item_apply_num_plus`, `item_apply_num`, `item_piece_left`, `item_piece`, `item_name`, `item_type_id`, `item_brand_id`, `item_start_time`, `item_end_time`, `item_pic_small`, `item_pic_middle`, `item_pic_banner`, `item_prop`, `item_intro`, `item_intro_more`, `item_ctime`, `item_id`, `bbs_tid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18).
+in /home/lizhen/lizhen_html/try/protected/models/Item.php (223)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (56)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 09:51:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '16' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `try_item` (`item_status`, `item_apply_num_plus`, `item_apply_num`, `item_piece_left`, `item_piece`, `item_name`, `item_type_id`, `item_brand_id`, `item_start_time`, `item_end_time`, `item_pic_small`, `item_pic_middle`, `item_pic_banner`, `item_prop`, `item_intro`, `item_intro_more`, `item_ctime`, `item_id`, `bbs_tid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18)' in /home/lizhen/lizhen_html/yii/db/CDbCommand.php:354
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/lizhen/lizhen_html/try/protected/models/Item.php(223): CActiveRecord->save()
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1034): Item->afterSave()
+#4 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#5 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(56): CActiveRecord->save()
+#6 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#17 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/create
+---
+2013/03/07 09:52:58 [error] [php] Missing argument 2 for CActiveRecord::updateByPk(), called in /home/lizhen/lizhen_html/try/protected/models/Item.php on line 223 and defined (/home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php:1674)
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): Item->insert()
+#1 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(56): Item->save()
+#2 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams()
+#4 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): ItemController->runAction()
+#5 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CAccessControlFilter->filter()
+#7 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): ItemController->filterAccessControl()
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(266): ItemController->runActionWithFilters()
+#11 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): ItemController->run()
+#12 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/lizhen/lizhen_html/try/index.php(13): CWebApplication->run()
+REQUEST_URI=/try/bg/item/create
+in /home/lizhen/lizhen_html/try/protected/models/Item.php (223)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (56)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 09:53:08 [error] [exception.CDbException] exception 'CDbException' with message 'active record 由于是新的, 无法被更新.' in /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php:1055
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(223): CActiveRecord->update()
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1034): Item->afterSave()
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#3 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(56): CActiveRecord->save()
+#4 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#12 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#14 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#15 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/create
+---
+2013/03/07 09:53:58 [error] [exception.CDbException] exception 'CDbException' with message 'active record 由于是新的, 无法被更新.' in /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php:1055
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/models/Item.php(223): CActiveRecord->update()
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1034): Item->afterSave()
+#2 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#3 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(56): CActiveRecord->save()
+#4 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#5 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#12 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#14 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#15 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/create
+---
+2013/03/07 10:00:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '24' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `try_item` (`item_status`, `item_apply_num_plus`, `item_apply_num`, `item_piece_left`, `item_piece`, `item_name`, `item_type_id`, `item_brand_id`, `item_start_time`, `item_end_time`, `item_pic_small`, `item_pic_middle`, `item_pic_banner`, `item_prop`, `item_intro`, `item_intro_more`, `item_ctime`, `item_id`, `bbs_tid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18).
+in /home/lizhen/lizhen_html/try/protected/models/Item.php (223)
+in /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php (56)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 10:00:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '24' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `try_item` (`item_status`, `item_apply_num_plus`, `item_apply_num`, `item_piece_left`, `item_piece`, `item_name`, `item_type_id`, `item_brand_id`, `item_start_time`, `item_end_time`, `item_pic_small`, `item_pic_middle`, `item_pic_banner`, `item_prop`, `item_intro`, `item_intro_more`, `item_ctime`, `item_id`, `bbs_tid`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18)' in /home/lizhen/lizhen_html/yii/db/CDbCommand.php:354
+Stack trace:
+#0 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /home/lizhen/lizhen_html/try/protected/models/Item.php(223): CActiveRecord->save(false)
+#3 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(1034): Item->afterSave()
+#4 /home/lizhen/lizhen_html/yii/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#5 /home/lizhen/lizhen_html/try/protected/controllers/bg/ItemController.php(56): CActiveRecord->save()
+#6 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): ItemController->actionCreate()
+#7 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/lizhen/lizhen_html/yii/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/lizhen/lizhen_html/yii/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/lizhen/lizhen_html/yii/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/lizhen/lizhen_html/yii/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/lizhen/lizhen_html/yii/web/CController.php(292): CFilterChain->run()
+#14 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('create')
+#16 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('bg/item/create')
+#17 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/try/bg/item/create
+HTTP_REFERER=http://192.168.0.226/try/bg/item/create
+---
+2013/03/07 10:38:48 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (252)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 10:39:02 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (252)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/07 10:44:50 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (252)
+in /home/lizhen/lizhen_html/try/index.php (13)

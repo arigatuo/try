@@ -46,13 +46,11 @@ class Item extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('item_name, item_type_id, item_brand_id, item_start_time, item_end_time, item_pic_small,
-			item_pic_middle',
-                'required'),
+			array('item_name, item_type_id, item_brand_id, item_start_time, item_end_time, item_pic_small, item_pic_middle, item_pic_banner', 'required'),
 			array('item_name', 'length', 'max'=>30),
 			array('item_brand_id, item_apply_num_plus, item_apply_num, item_piece', 'length', 'max'=>10),
 			array('item_status', 'length', 'max'=>7),
-			array('item_intro, item_intro_more, item_pic_small, item_pic_middle, item_piece_left, item_prop, bbs_tid', 'safe'),
+			array('item_intro, item_intro_more, item_pic_small, item_pic_middle, item_pic_banner, item_piece_left, item_prop, bbs_tid', 'safe'),
             array('item_start_time', 'compare', 'compareAttribute'=>'item_end_time', 'operator'=>'<',
                 'message'=>'试用申请开始时间必须小于结束时间'),
 			// The following rule is used by search().
@@ -97,6 +95,7 @@ class Item extends CActiveRecord
             'item_piece_left' => Yii::t('base','Item Piece Left'),
             'item_pic_small' => Yii::t('base','Item Pic Small'),
             'item_pic_middle' => Yii::t('base','Item Pic Middle'),
+            'item_pic_banner' => Yii::t('base','Item Pic Banner'),
 		);
 	}
 
@@ -186,20 +185,25 @@ class Item extends CActiveRecord
             CommonHelper::unlinkRelationPic($this->oldRecord->item_pic_middle);
         }
 
+
+        return parent::beforeSave();
+    }
+
+    public function afterSave(){
         /**
          * 同步发布帖子到论坛
          */
-        if(empty($this->bbs_tid) && $this->item_status==="online"){
+        if(!empty(Yii::app()->params['bbs_sync'])  && empty($this->bbs_tid) && $this->item_status==="online"){
             //帖子内容
             ob_start();
             Yii::app()->Controller->renderPartial("////common/item_thread", array(
-                'item_intro' => $this->item_intro,
+                'item_intro_more' => $this->item_intro_more,
                 'item_title' => $this->item_name,
                 'item_start_time' => $this->item_start_time,
                 'item_end_time' => $this->item_end_time,
                 'item_piece' => $this->item_piece,
                 'item_pic' => Yii::app()->request->hostInfo."/".$this->item_pic_small,
-                'url' => Yii::app()->createUrl('/main/Index/Detail', array('item_id'=>$this->item_id)),
+                'url' => Yii::app()->createAbsoluteUrl('/main/Index/Detail', array('item_id'=>$this->item_id)),
             ));
             $threadContent = ob_get_clean();
 
@@ -215,18 +219,35 @@ class Item extends CActiveRecord
             $newSync = new BbsSync();
             $tid = $newSync->syncThread($threadInfo);
             if(!empty($tid) && is_numeric($tid)){
+                $this->setIsNewRecord(false);
                 $this->bbs_tid = $tid;
+                $this->save(false);
             }
         }
-
-        return parent::beforeSave();
+        return parent::afterSave();
     }
 
     //删除,更改条目后删除图片文件
     public function beforeDelete(){
         !empty($this->item_pic_small) && CommonHelper::unlinkRelationPic($this->item_pic_small);
         !empty($this->item_pic_middle) && CommonHelper::unlinkRelationPic($this->item_pic_middle);
+
+        Apply::model()->deleteAllByAttributes(
+            array(
+                'item_id' => $this->item_id
+            )
+        );
+
+        Article::model()->deleteAllByAttributes(
+            array(
+                'item_id' => $this->item_id,
+            )
+        );
+
         return parent::beforeDelete();
+    }
+
+    public function afterDelete(){
     }
 
     /**
@@ -240,6 +261,8 @@ class Item extends CActiveRecord
         $criteria = new CDbCriteria();
         if(!empty($selectParams)){
             $criteria->params = $selectParams;
+        }
+
         if(!empty($condition))
             $criteria->addCondition($condition);
 
@@ -248,7 +271,7 @@ class Item extends CActiveRecord
             'item_status' => 'online',
         );
         $criteria->order = "item_id desc";
-        }
+
         if(empty($usePage))
             $criteria->limit = $limit;
         $criteria->with = array('brand');

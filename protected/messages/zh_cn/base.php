@@ -82,6 +82,7 @@ return array(
     'Item Piece Left' => '剩余件数',
     'Item Pic Small' => '小图',
     'Item Pic Middle' => '中图',
+    'Item Pic Banner' => 'banner图',
 
     'Article Status' => '状态',
 );

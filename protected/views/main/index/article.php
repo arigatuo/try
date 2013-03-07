@@ -44,7 +44,7 @@ $form = $this->beginWidget('CActiveForm', array(
 <script type="text/javascript">
     $(function(){
         $('#Article_article_content').xheditor({skin:'nostyle',tools:'Cut,Copy,Paste,|,Bold,Italic,Underline,|,FontSize,FontColor,BackColor,|,SelectAll,Align, Outdent,Indent,|,Img,Fullscreen', width:889, height:368, html5Upload:false, upImgExt:'jpg,jpeg', upImgUrl:'<?php echo Yii::app()->createUrl('main/Ajax/Uploadimg');?>'});
-        $('.score').raty({ score: 4 , starOff : siteSettings.baseUrl+"/images/star-off.png",
-            starOn : siteSettings.baseUrl+"/images/star-on.png", scoreName : "Article[item_point]"});
+        $('.score').raty({ score: 4 , starOff : siteSettings.baseUrl+"images/star-off.png",
+            starOn : siteSettings.baseUrl+"images/star-on.png", scoreName : "Article[item_point]"});
     });
 </script>
