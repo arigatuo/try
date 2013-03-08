@@ -35,15 +35,16 @@ CREATE TABLE `try_apply` (
   `apply_time` int(10) unsigned NOT NULL COMMENT '申请时间',
   `addr_email` varchar(255) NOT NULL COMMENT '邮箱',
   `bbs_pid` bigint(20) unsigned DEFAULT NULL COMMENT 'bbs回帖id',
+  `is_real` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '是否真实申请',
   PRIMARY KEY (`apply_id`),
   UNIQUE KEY `idx_user_item` (`user_id`,`item_id`),
   KEY `item_id` (`item_id`,`apply_status`),
   KEY `item_user_status` (`user_id`,`apply_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 /*Data for the table `try_apply` */
 
-insert  into `try_apply`(`apply_id`,`user_id`,`item_brand_id`,`item_id`,`apply_status`,`apply_text`,`addr_province`,`addr_city`,`addr_phone`,`addr_address`,`addr_name`,`apply_time`,`addr_email`,`bbs_pid`) values (4,419358,2,10,'selected','fsaff','北京','东城区','13538928191','fdsafasfs','李臻',1362369368,'fdsaf@fadsfsa.com',4892519),(5,1481745,2,10,'selected','我要进行试用','北京','东城区','13800138000','天河北1000号','亲子网',1362369391,'saf@11.com',4892505),(6,1481745,2,11,'applying','啊斯蒂芬阿肥士多地煞符爱的色放','北京','东城区','13800013800','请输入正确的电话','流量',1362470348,'11111@11.com',NULL);
+insert  into `try_apply`(`apply_id`,`user_id`,`item_brand_id`,`item_id`,`apply_status`,`apply_text`,`addr_province`,`addr_city`,`addr_phone`,`addr_address`,`addr_name`,`apply_time`,`addr_email`,`bbs_pid`,`is_real`) values (14,419358,4,12,'applying','fdafdsaf','北京','东城区','13538928191','fdafdsafasda','李臻',1362717537,'fdsaf@fadsfsa.com',NULL,1),(15,419358,3,14,'applying','fdsf','北京','东城区','13538928191','fdfasfsdafsdfdsf','李臻',1362717756,'asfdsf@fdasdf.com',NULL,1),(16,419358,3,15,'applying','fdsa','北京','东城区','13538928191','fdsafsadfsadf','李臻',1362717850,'ffasfd@fdsaf.com',NULL,1);
 
 /*Table structure for table `try_article` */
 
@@ -63,11 +64,11 @@ CREATE TABLE `try_article` (
   PRIMARY KEY (`article_id`),
   KEY `user_id` (`item_id`,`user_id`),
   KEY `article_status` (`article_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 /*Data for the table `try_article` */
 
-insert  into `try_article`(`article_id`,`item_brand_id`,`item_id`,`user_id`,`article_title`,`article_content`,`item_point`,`article_ctime`,`article_status`,`bbs_tid`) values (15,2,10,419358,'雅思兰黛试用心得','<p>总而言之，于是，然后<span style=\"background-color: rgb(255, 0, 0);\">fdsfsdaf<span style=\"font-size:48px;\">fdsafdsaf<span style=\"color:#FFFF66;\">fdsf</span></span></span></p><p><span style=\"background-color: rgb(255, 0, 0);\"><span style=\"font-size:48px;\"><span style=\"color:#FFFF66;\"><img src=\"http://192.168.0.226//try/upload/ucg/day_130305/201303051615102410.jpg\" alt=\"\" /><br /></span></span></span></p><p><span style=\"background-color: rgb(255, 0, 0);\"><span style=\"font-size:48px;\"><span style=\"color:#FFFF66;\"><br /></span></span></span></p>',4,1362471313,'accept',0),(16,2,10,419358,'雅思兰黛试用装申请222','<p>fdasfsaf<strong>fdsafsadfdsaf<em>fdsfsda<span style=\"font-size:48px;\">fdasfsaf</span></em></strong></p><p><strong><em><span style=\"font-size:48px;\">fdsf<span style=\"background-color: rgb(255, 255, 255);\">fd</span></span></em></strong></p><p><strong><em><span style=\"font-size:48px;\"><span style=\"background-color: rgb(255, 255, 255);\"></span></span></em></strong></p><p><strong><em><span style=\"font-size:48px;\"><span style=\"background-color: rgb(255, 255, 255);\">fdsaf</span></span></em></strong></p><p><strong><em><span style=\"font-size:48px;\"><span style=\"background-color: rgb(255, 255, 255);\"><img src=\"http://192.168.0.226//try/upload/ucg/day_130305/201303051624188762.jpg\" alt=\"\" /></span><br /></span></em></strong></p>',4,1362471891,'accept',0),(17,2,10,419358,'测试申请3333','<p>dsdfsdf<strong>fdsafdsafdsfsa</strong></p><p><strong><u><em>fdsafdsfs</em></u></strong></p><p><br /></p><p><strong><u><em><span style=\"font-size:24px;\">fdasfdsafs</span></em></u></strong></p><p><br /></p><p><strong><u><em><span style=\"font-size:24px;\"><img src=\"http://192.168.0.226//try/upload/ucg/day_130305/201303051626482801.jpg\" alt=\"\" /></span></em></u></strong></p><p><strong>fdsfsf<br /></strong></p>',4,1362472030,'accept',0),(18,2,10,419358,'雅思测试44444','<p>&lt;script&gt;alert(\'abc\');&lt;/script&gt;</p><p>dasfsdaf</p><p>fdasf<strong>fdsafsdafs</strong></p><p><strong><u>fdsadfdsadf</u></strong></p><p><strong><u><span style=\"background-color: rgb(255, 0, 0);\">fdsfsaf</span></u></strong></p><p><strong><u><span style=\"background-color: rgb(255, 0, 0);\"><span style=\"color:#FFFFFF;\">fdsafdsafsdfds</span></span></u></strong></p><p><strong><u><span style=\"background-color: rgb(255, 0, 0);\"><span style=\"color:#FFFFFF;\"><img src=\"http://192.168.0.226//try/upload/ucg/day_130305/201303051628143055.jpg\" alt=\"\" /></span></span></u></strong><br /></p>',4,1362472098,'accept',0),(19,2,10,419358,'fdsafsadf','<img src=\"http://192.168.0.226//try/upload/ucg/day_130306/201303061002475421.jpg\" alt=\"\" />',4,1362535378,'applying',NULL);
+insert  into `try_article`(`article_id`,`item_brand_id`,`item_id`,`user_id`,`article_title`,`article_content`,`item_point`,`article_ctime`,`article_status`,`bbs_tid`) values (20,3,14,419358,'系诶单什么系诶单什么','<p>系诶单什么系诶单什么系诶单什么系诶单什么<strong><em>ddd<span style=\"color:#330000;\">sdsdsds</span></em></strong></p><p><strong><em><span style=\"color:#330000;\"><u>dsdsdsds</u></span></em></strong></p><p><strong><em><span style=\"color:#330000;\"><u><img src=\"http://192.168.0.226//try/upload/ucg/day_130306/201303061506014073.jpg\" alt=\"\" /></u><br /></span></em></strong></p>',5,1362553565,'accept',846231),(21,4,12,419358,'21324124','<strong>3213123123213</strong>',4,1362562136,'accept',846232);
 
 /*Table structure for table `try_brand` */
 
@@ -83,7 +84,7 @@ CREATE TABLE `try_brand` (
 
 /*Data for the table `try_brand` */
 
-insert  into `try_brand`(`brand_id`,`brand_name`,`brand_ctime`,`brand_pic`) values (2,'雅思兰黛',1361773450,'/try/upload/20130226/74c1387c6054d5f0a793c770d6bb8754.jpg'),(3,'欧珀莱',1362369621,'/try/upload/20130304/0a6c1e64dd0bc2968b1efa961f907f40.jpg'),(4,'婴儿奶粉',1362475206,'/try/upload/20130305/a80548527bae25eb88baaf795088e3da.jpg');
+insert  into `try_brand`(`brand_id`,`brand_name`,`brand_ctime`,`brand_pic`) values (3,'欧珀莱',1362369621,'/try/upload/20130304/0a6c1e64dd0bc2968b1efa961f907f40.jpg'),(4,'婴儿奶粉',1362475206,'/try/upload/20130305/a80548527bae25eb88baaf795088e3da.jpg');
 
 /*Table structure for table `try_item` */
 
@@ -105,16 +106,17 @@ CREATE TABLE `try_item` (
   `item_piece` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '试用件数',
   `item_pic_small` varchar(255) NOT NULL COMMENT '试用品小图',
   `item_pic_middle` varchar(255) NOT NULL COMMENT '试用品中图',
+  `item_pic_banner` varchar(255) NOT NULL COMMENT '试用装banner图',
   `item_type_id` smallint(3) NOT NULL COMMENT '类型id',
   `item_prop` varchar(20) DEFAULT NULL COMMENT '规格',
   `bbs_tid` bigint(20) unsigned DEFAULT NULL COMMENT '对应论坛帖子id',
   PRIMARY KEY (`item_id`),
   KEY `idx_start_end_time` (`item_status`,`item_start_time`,`item_end_time`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 /*Data for the table `try_item` */
 
-insert  into `try_item`(`item_id`,`item_name`,`item_brand_id`,`item_ctime`,`item_status`,`item_start_time`,`item_end_time`,`item_intro_more`,`item_intro`,`item_apply_num_plus`,`item_apply_num`,`item_piece_left`,`item_piece`,`item_pic_small`,`item_pic_middle`,`item_type_id`,`item_prop`,`bbs_tid`) values (10,'fdsafadsd',2,1361774716,'online',1361721600,1363276800,'<p>dsafsaf<img src=\"http://192.168.0.226//try/upload/ucg/day_130306/201303061006015973.jpg\" alt=\"\" /><br /></p><p>dsafdsadf<br /></p>','这是间接来的224fd',4444,0,4,1,'/try/upload/20130225/9cd99f88bef6b40e574328c5ea56b5c9.jpg','/try/upload/20130225/b267c481329a2b0144c4f452902dfd0c.jpg',1,'5ml',843190),(11,'fdsafa',2,1361782781,'online',1361721600,1364227200,NULL,'这是间接来的dd',111,0,143,155,'/try/upload/20130225/b411566ca9b6bdae807d1ee1a2603b5c.jpg','/try/upload/20130225/c9f5467202bdcee568652c9c9b350214.jpg',2,'11g',0),(12,'婴儿奶粉的免费试用',4,1362475291,'online',1362499200,1363276800,NULL,'为了给爱美妈妈网论坛给用户一个良好的交流环境，也为了它更好的发展！\r\n\r\n我们需要大量的版主来维护这个环境～\r\n\r\n希望对版主一职有兴趣的JMM踊跃参与到我们这个平台来，\r\n\r\n让我们一起把它创造的更好～～心动了吗？\r\n\r\n心动的JMM、宝妈们那就赶紧行动起来吧！！！\r\n\r\n',14,0,0,34,'/try/upload/20130305/d5cd053b33ea4663037809f0abda3556.jpg','/try/upload/20130305/b9f8dc147eb71a6114d9a02101d19d2c.jpg',1,'300g',0),(13,'婴儿护肤',2,1362477495,'online',1362931200,1363104000,NULL,'很是 不错啊～～',0,0,20,100,'/try/upload/20130305/caa6541003b063ff7f0d96d38a98efcf.jpg','/try/upload/20130305/7f428e872925a40d3fc972e4bb02243d.jpg',1,'',843188),(14,'新一期试用装的优化',3,1362479731,'online',1362412800,1364486400,NULL,'不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题\r\n\r\n不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题',10,0,4,10,'/try/upload/20130305/b24cdf7cbd1d79f1f947e5cc16ba0fea.jpg','/try/upload/20130305/c82c2a9788c40e96b36f24265829419c.jpg',1,'400g',0),(15,'测试测试测试测试测',3,1362480737,'online',1362499200,1363881600,NULL,'测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',12,0,5,12,'/try/upload/20130305/cf518509105e6c190cfb7ff217d8a399.jpg','/try/upload/20130305/05dccef8f389a3ff58a24da637bb1230.jpg',1,'400g',843189);
+insert  into `try_item`(`item_id`,`item_name`,`item_brand_id`,`item_ctime`,`item_status`,`item_start_time`,`item_end_time`,`item_intro_more`,`item_intro`,`item_apply_num_plus`,`item_apply_num`,`item_piece_left`,`item_piece`,`item_pic_small`,`item_pic_middle`,`item_pic_banner`,`item_type_id`,`item_prop`,`bbs_tid`) values (12,'婴儿奶粉的免费试用',4,1362475291,'online',1362499200,1363276800,'<span style=\"font-size:32px;\"><strong>为了给爱美妈妈网论坛给用户一个良好的交流环境，也为了它更好的发展！</strong></span><br /><img src=\"http://192.168.0.226//try/upload/intro/day_130306/201303061634379614.jpg\" alt=\"\" /><br />我们需要大量的版主来维护这个环境～<br /><br />希望对版主一职有兴趣的JMM踊跃参与到我们这个平台来，<br /><br />让我们一起把它创造的更好～～心动了吗？<br /><br />心动的JMM、宝妈们那就赶紧行动起来吧！！！<br /><br />','为了给爱美妈妈网论坛给用户一个良好的交流环境，也为了它更好的发展！\r\n\r\n我们需要大量的版主来维护这个环境～\r\n\r\n希望对版主一职有兴趣的JMM踊跃参与到我们这个平台来，\r\n\r\n让我们一起把它创造的更好～～心动了吗？\r\n\r\n心动的JMM、宝妈们那就赶紧行动起来吧！！！\r\n\r\n',14,1,0,34,'/try/upload/20130305/d5cd053b33ea4663037809f0abda3556.jpg','/try/upload/20130305/b9f8dc147eb71a6114d9a02101d19d2c.jpg','/try/upload/20130306/900ccfcf61d160b590a7bd3c0efd04cc.jpg',1,'300g',846233),(14,'新一期试用装的优化',3,0,'online',0,0,NULL,'不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题\r\n\r\n不知道为什么还有不问题不知道为什么还有不问题不知道为什么还有不问题',10,1,4,10,'/try/upload/20130305/b24cdf7cbd1d79f1f947e5cc16ba0fea.jpg','/try/upload/20130305/c82c2a9788c40e96b36f24265829419c.jpg','',1,'400g',846285),(15,'测试测试测试测试测',3,0,'online',0,0,NULL,'测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',12,1,5,12,'/try/upload/20130305/cf518509105e6c190cfb7ff217d8a399.jpg','/try/upload/20130305/05dccef8f389a3ff58a24da637bb1230.jpg','',1,'400g',846284),(25,'fdsafds',3,0,'online',0,0,'fdsadf','fsd',0,0,0,0,'/try/upload/20130307/a5df05d18ec8bab4f716c712fb4580ae.jpg','/try/upload/20130307/5da56b159d32dacd076b4c8c4ec58d0a.jpg','/try/upload/20130307/07eadfb700bf58cb9bdd9bb1070e7b64.jpg',1,'',846267);
 
 /*Table structure for table `try_item_type` */
 
@@ -124,11 +126,11 @@ CREATE TABLE `try_item_type` (
   `item_type_id` smallint(3) unsigned NOT NULL AUTO_INCREMENT COMMENT '类型id',
   `item_type_name` varchar(50) NOT NULL COMMENT '类型名称',
   PRIMARY KEY (`item_type_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 /*Data for the table `try_item_type` */
 
-insert  into `try_item_type`(`item_type_id`,`item_type_name`) values (1,'名品试用'),(2,'淘试用'),(3,'婴儿奶粉'),(4,'纸尿裤');
+insert  into `try_item_type`(`item_type_id`,`item_type_name`) values (1,'名品试用'),(2,'淘试用');
 
 /*Table structure for table `try_lady8844_sessions` */
 
@@ -143,7 +145,7 @@ CREATE TABLE `try_lady8844_sessions` (
 
 /*Data for the table `try_lady8844_sessions` */
 
-insert  into `try_lady8844_sessions`(`id`,`expire`,`data`) values ('1nt3kjqpc62fuc0utqmbqnapf2',1362565526,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:5:\"zhuyf\";322a3913159c182949067fce2fdfebd5__name|s:5:\"zhuyf\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"17\";322a3913159c182949067fce2fdfebd5username|s:5:\"zhuyf\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}'),('5ei3abq8uu5mu1dk7ub43id4t3',1362561374,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('5l5hve0om7803s80uq05rn3ek1',1362623581,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('94dcnugfrhnst5evlu0dh58om2',1362567415,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__name|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"10\";322a3913159c182949067fce2fdfebd5username|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}'),('aia44r5ffj175b619hu76gn4j6',1362567216,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5__name|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"14\";322a3913159c182949067fce2fdfebd5username|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}'),('euk8aetq72ncck20713uelob75',1362559918,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('l97env2f8u6s21bmctuh9mq3a2',1362619223,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('pfcquohqqo1innrv1h7p6ffde6',1362539577,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('sdsf0hf4otes9ped49sfijves5',1362623621,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__name|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"10\";322a3913159c182949067fce2fdfebd5username|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}'),('tcg17b7uhn060kgrens5v6doj4',1362623607,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5__name|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"14\";322a3913159c182949067fce2fdfebd5username|s:7:\"zhongzh\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}');
+insert  into `try_lady8844_sessions`(`id`,`expire`,`data`) values ('fulffl6e44jlihqjq2p21p9n51',1362807036,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";322a3913159c182949067fce2fdfebd5__id|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__name|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5roles|s:10:\"superAdmin\";322a3913159c182949067fce2fdfebd5uid|s:2:\"10\";322a3913159c182949067fce2fdfebd5username|s:6:\"lizhen\";322a3913159c182949067fce2fdfebd5__states|a:3:{s:5:\"roles\";b:1;s:3:\"uid\";b:1;s:8:\"username\";b:1;}'),('hadbmv3vrjqj7lovogedv650a6',1362724955,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";'),('l24ohmvongknacvg93fo30sc40',1362796718,'322a3913159c182949067fce2fdfebd5__returnUrl|s:18:\"/try/bg/item/admin\";');
 
 /*Table structure for table `try_media` */
 
@@ -161,7 +163,7 @@ CREATE TABLE `try_media` (
 
 /*Data for the table `try_media` */
 
-insert  into `try_media`(`media_id`,`media_position`,`media_url`,`media_photo`,`media_text`,`media_ctime`) values (1,'homepage_flash','http://www.baidu.com','/try/upload/20130226/68434413c7929c54b7b3903a787cd23d.jpg','',1361849747),(4,'homepage_flash','http://www.google.com','/try/upload/20130227/72c46dff867ddfe1d4af362e386b9351.jpg','',1361956293),(5,'homepage_flash','http://news.qq.com','/try/upload/20130227/690508969801f994b087fa2b0ec64042.jpg','',1361956317),(6,'homepage_flash','http://www.weiphone.com','/try/upload/20130227/a21f76b71de5e87569dde569c2f2e3a4.jpg','',1361956334),(7,'homepage_flash','http://www.sina.com.cn','/try/upload/20130227/dbb5ee33d307707d34eaf1f273bb3d76.jpg','',1361956348),(8,'detail_top_pic','http://www.pconline.com.cn','/try/upload/20130228/dbda5675add73ac59c995c0eb6897719.jpg','',1362044628);
+insert  into `try_media`(`media_id`,`media_position`,`media_url`,`media_photo`,`media_text`,`media_ctime`) values (1,'homepage_flash','http://www.baidu.com','/try/upload/20130226/68434413c7929c54b7b3903a787cd23d.jpg','',1361849747),(4,'homepage_flash','http://www.google.com','/try/upload/20130227/72c46dff867ddfe1d4af362e386b9351.jpg','',1361956293),(5,'homepage_flash','http://news.qq.com','/try/upload/20130227/690508969801f994b087fa2b0ec64042.jpg','',1361956317),(6,'homepage_flash','http://www.weiphone.com','/try/upload/20130227/a21f76b71de5e87569dde569c2f2e3a4.jpg','',1361956334),(7,'homepage_flash','http://www.sina.com.cn','/try/upload/20130227/dbb5ee33d307707d34eaf1f273bb3d76.jpg','',1361956348),(8,'detail_top_pic','http://www.pconline.com.cn','/try/upload/20130306/e9d8bb809e05542d43837cf370180e95.jpg','',1362044628);
 
 /*Table structure for table `try_media_position` */
 
@@ -191,7 +193,7 @@ CREATE TABLE `try_user` (
 
 /*Data for the table `try_user` */
 
-insert  into `try_user`(`user_id`,`user_name`,`user_detail`,`is_real_user`) values (419358,'arigatuo','a:11:{s:8:\"birthday\";s:0:\"\";s:9:\"education\";s:0:\"\";s:8:\"marriage\";s:0:\"\";s:6:\"income\";s:1:\"2\";s:4:\"skin\";s:6:\"中性\";s:9:\"hairstyle\";s:0:\"\";s:12:\"prink_custom\";s:0:\"\";s:10:\"nurse_mode\";s:1:\"1\";s:20:\"beauty_month_consume\";s:1:\"3\";s:8:\"buy_mode\";s:12:\"商场专柜\";s:15:\"newproduct_mode\";s:12:\"电视广告\";}',1),(1481745,'bobys','a:15:{s:3:\"sex\";s:1:\"1\";s:8:\"birthday\";s:9:\"1988-88-8\";s:9:\"education\";s:12:\"大专以下\";s:8:\"marriage\";s:1:\"2\";s:6:\"income\";s:1:\"2\";s:4:\"skin\";s:9:\"混合性\";s:9:\"hairstyle\";s:0:\"\";s:12:\"prink_custom\";s:0:\"\";s:10:\"nurse_mode\";s:1:\"1\";s:5:\"brand\";a:1:{i:0;s:21:\"欧美系品牌粉丝\";}s:11:\"loveproduct\";a:1:{i:0;s:1:\"1\";}s:20:\"beauty_month_consume\";s:1:\"3\";s:8:\"buy_mode\";s:12:\"商场专柜\";s:12:\"willingtotry\";s:1:\"0\";s:15:\"newproduct_mode\";s:12:\"电视广告\";}',1);
+insert  into `try_user`(`user_id`,`user_name`,`user_detail`,`is_real_user`) values (419358,'arigatuo','a:9:{s:7:\"item_id\";s:2:\"15\";s:10:\"apply_text\";s:4:\"fdsa\";s:9:\"addr_name\";s:6:\"李臻\";s:10:\"addr_phone\";s:11:\"13538928191\";s:13:\"addr_province\";s:6:\"北京\";s:9:\"addr_city\";s:9:\"东城区\";s:12:\"addr_address\";s:13:\"fdsafsadfsadf\";s:10:\"addr_email\";s:16:\"ffasfd@fdsaf.com\";s:11:\"userDetails\";a:11:{s:8:\"birthday\";s:0:\"\";s:9:\"education\";s:0:\"\";s:8:\"marriage\";s:0:\"\";s:6:\"income\";s:1:\"2\";s:4:\"skin\";s:6:\"中性\";s:9:\"hairstyle\";s:0:\"\";s:12:\"prink_custom\";s:0:\"\";s:10:\"nurse_mode\";s:1:\"1\";s:20:\"beauty_month_consume\";s:1:\"3\";s:8:\"buy_mode\";s:12:\"商场专柜\";s:15:\"newproduct_mode\";s:12:\"电视广告\";}}',1),(1481745,'bobys','a:11:{s:8:\"birthday\";s:0:\"\";s:9:\"education\";s:0:\"\";s:8:\"marriage\";s:0:\"\";s:6:\"income\";s:1:\"2\";s:4:\"skin\";s:6:\"中性\";s:9:\"hairstyle\";s:0:\"\";s:12:\"prink_custom\";s:0:\"\";s:10:\"nurse_mode\";s:1:\"1\";s:20:\"beauty_month_consume\";s:1:\"3\";s:8:\"buy_mode\";s:12:\"商场专柜\";s:15:\"newproduct_mode\";s:12:\"电视广告\";}',1);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
