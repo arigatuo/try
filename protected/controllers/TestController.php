@@ -10,6 +10,14 @@
 //todo 删除test文件
 
 class TestController extends Controller{
+    public function init(){
+        $debug = Yii::app()->params['debug'];
+        if(!empty($debug))
+            ;
+        else
+            die();
+    }
+
     public function actionLogin(){
         $a = MyUcenter::login("arigatuo", "111111");
         echo $a;
@@ -54,4 +62,15 @@ class TestController extends Controller{
 
         var_dump($content);
     }
+
+    public function actionTest1(){
+        $item_id = Yii::app()->request->getParam("item_id");
+        if(!empty($item_id))
+            var_dump(Apply::model()->countApplyByItemIdMore($item_id, false));
+    }
+
+    public function actionTest2(){
+    }
+
+
 }

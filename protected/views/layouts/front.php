@@ -41,11 +41,9 @@
             <ul class="site-nav-left">
                 <li class="J_Sd">
                     <dl>
-                        <dt>爱美妈妈<b></b></dt>
+                        <dt><a href="http://www.imeimama.com" target="_blank">爱美妈妈</a><b></b></dt>
                         <dd>
-                            <div class="item"><a href="#" target="_blank">爱美妈妈</a></div>
-                            <div class="item"><a href="#" target="_blank">爱美妈妈</a></div>
-                            <div class="item"><a href="#" target="_blank">爱美妈妈</a></div>
+                            <div class="item"><a href="http://www.lady8844.com" target="_blank">爱美网</a></div>
                         </dd>
                     </dl>
                 </li>
@@ -143,3 +141,5 @@
         </div>
 </body>
 </html>
+<script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.switchable-2.0.min.js" type="text/javascript"></script>
+<script src="<?php echo Yii::app()->baseUrl;?>/js/v.js" type="text/javascript"></script>

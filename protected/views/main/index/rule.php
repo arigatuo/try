@@ -58,4 +58,3 @@
     </div>
 </div>
 <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.switchable-2.0.min.js" type="text/javascript"></script>
-<script src="<?php echo Yii::app()->baseUrl;?>/js/v.js" type="text/javascript"></script>

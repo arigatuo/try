@@ -1,5 +1,5 @@
 <?php
-    $curItemName = $curItem->brand->getAttribute("brand_name")." ".$curItem->getAttribute("item_name") ." " .$curItem->getAttribute("item_prop");
+    $curItemName = $curItem->brand->getAttribute("brand_name")." ".$curItem->getAttribute("item_name");
 ?>
 <div class="banner">
     <a href="javascript:void(0)">
@@ -14,8 +14,7 @@
           <div class="pic"><img src="<?php echo $curItem->getAttribute("item_pic_middle");?>" width="302" height="302"
 alt="<?php echo $curItemName;?>" /></div>
           <div class="txt">
-            <div class="ysq"><strong><?php echo $curItem->getAttribute("item_apply_num_plus")+$curItem->getAttribute
-            ("item_apply_num");?>
+            <div class="ysq"><strong><?php echo $curItem->getAttribute("item_apply_num_plus")+Apply::model()->countApplyByItemId($curItem->item_id);?>
 </strong>人已申请</div>
             <div class="suliang-guige">
               <div class="suliang">数量<strong><?php echo $curItem->getAttribute("item_piece");?>份</strong></div>

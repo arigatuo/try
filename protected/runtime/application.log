@@ -4665,3 +4665,34 @@ in /home/lizhen/lizhen_html/try/index.php (13)
 2013/03/07 10:44:50 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
 in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (252)
 in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/08 12:42:19 [warning] [application] Failed to set unsafe attribute "userDetails" of "Apply".
+in /home/lizhen/lizhen_html/try/protected/controllers/main/IndexController.php (252)
+in /home/lizhen/lizhen_html/try/index.php (13)
+2013/03/08 12:47:52 [error] [exception.CException] exception 'CException' with message '属性 "CHttpRequest.params" 未被定义.' in /home/lizhen/lizhen_html/yii/base/CComponent.php:131
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(59): CComponent->__get('params')
+#1 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionTest1()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('test1')
+#6 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/test1')
+#7 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/try/Test/test1
+---
+2013/03/08 12:48:28 [error] [exception.CException] exception 'CException' with message 'item_id参数错误' in /home/lizhen/lizhen_html/try/protected/models/Apply.php:239
+Stack trace:
+#0 /home/lizhen/lizhen_html/try/protected/controllers/TestController.php(60): Apply->countApplyByItemId(NULL)
+#1 /home/lizhen/lizhen_html/yii/web/actions/CInlineAction.php(50): TestController->actionTest1()
+#2 /home/lizhen/lizhen_html/yii/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /home/lizhen/lizhen_html/yii/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /home/lizhen/lizhen_html/yii/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(276): CController->run('test1')
+#6 /home/lizhen/lizhen_html/yii/web/CWebApplication.php(135): CWebApplication->runController('Test/test1')
+#7 /home/lizhen/lizhen_html/yii/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/lizhen/lizhen_html/try/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/try/Test/test1
+---

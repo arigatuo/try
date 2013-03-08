@@ -42,5 +42,3 @@
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/dayCount.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/login.js"></script>
-<script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.switchable-2.0.min.js" type="text/javascript"></script>
-<script src="<?php echo Yii::app()->baseUrl;?>/js/v.js" type="text/javascript"></script>

@@ -192,7 +192,7 @@ class IndexController extends Controller{
                 array('user_id'=>$uid)
             );
             if($model->save()){
-                $this->showMsg(Yii::t('msg','success saved, pls wait for review'), Yii::app()->baseUrl);
+                $this->showMsg(Yii::t('msg','success saved, pls wait for review'), Yii::app()->request->hostInfo.Yii::app()->baseUrl);
             }else{
                 //todo 保存失败了T_T
             }
@@ -230,7 +230,7 @@ class IndexController extends Controller{
 
         $isExists = Apply::model()->countByAttributes(array("user_id"=>$uid, 'item_id'=>$item_id));
         if(!empty($isExists)){
-            $this->showMsg(Yii::t('msg','you have applied for this item'), Yii::app()->createUrl("/"));
+            $this->showMsg(Yii::t('msg','you have applied for this item'), Yii::app()->request->hostInfo.Yii::app()->baseUrl);
         }
 
         $model = new Apply;
@@ -276,7 +276,7 @@ class IndexController extends Controller{
                         //todo userDetails记录保存失败log
                     }
                 }
-                $this->showMsg(Yii::t('msg','success applied, pls wait for review'), Yii::app()->baseUrl);
+                $this->showMsg(Yii::t('msg','success applied, pls wait for review'), Yii::app()->request->hostInfo.Yii::app()->baseUrl);
             }else{
                 //$this->redirect(Yii::app()->createUrl("/main/apply", array("item_id"=>$item_id)));
                 //todo 保存失败后的动作

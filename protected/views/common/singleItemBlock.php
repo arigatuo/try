@@ -20,7 +20,7 @@ $itemName = $itemBrand.$item->getAttribute("item_name");
         <ul class="pf">
             <li class="sy"><span class="t">剩余</span><span class="b"><strong><?php echo $item->getAttribute("item_piece_left");?></strong>份</span></li>
             <li class="total"><span class="t">总数量</span><span class="b"><?php echo $item->getAttribute("item_piece");?>份</span></li>
-            <li class="hot"><span class="t">人气</span><span class="b"><?php echo $item->getAttribute("item_apply_num")+$item->getAttribute("item_apply_num_plus");?></span></li>
+            <li class="hot"><span class="t">人气</span><span class="b"><?php echo $item->getAttribute("item_apply_num_plus")+Apply::model()->countApplyByItemId($item->getAttribute("item_id"));?></span></li>
             <li class="wy"><a href="<?php echo $itemUrl;?>" target="_blank" title="我要试用">我要试用</a></li>
         </ul>
         <p class="des"><?php echo $item->getAttribute("item_intro");?></p>

@@ -189,6 +189,12 @@
         <?php echo $form->error($model, 'item_intro_more'); ?>
     </div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model, 'bbs_tid'); ?>
+        <?php echo $form->textField($model, 'bbs_tid'); ?>
+        <?php echo $form->error($model, 'bbs_tid'); ?>
+    </div>
+
     <?php
         if(!empty($model->bbs_tid)): ?>
             <div class="row">

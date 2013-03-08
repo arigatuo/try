@@ -46,6 +46,7 @@ $('.J_Sd').mouseenter(function(){
 
 
 $(function(){
+    /*隐藏右侧浮动块
 	var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"><a href="javascript:void(0)"></a></div>').appendTo($("body"))
 .attr("title", $backToTopTxt).click(function() {
 	$("html, body").animate({ scrollTop: 0 }, 400);
@@ -59,6 +60,7 @@ $(function(){
 	};
 	$(window).bind("scroll", $backToTopFun);
 	$(function() { $backToTopFun(); });
+	*/
 });
 
 $('.J_GoTop').click(function(){

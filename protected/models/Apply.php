@@ -148,6 +148,7 @@ class Apply extends CActiveRecord
         if(!is_numeric($this->apply_time))
             $this->apply_time = strtotime($this->apply_time);
 
+
         /**
          * 同步发回复
          */
@@ -178,6 +179,14 @@ class Apply extends CActiveRecord
         return parent::beforeSave();
     }
 
+    public function afterSave(){
+        if($this->isNewRecord){
+            //更新试用品的申请人数
+            $this->countApplyByItemId($this->item_id, FALSE);
+        }
+        return parent::afterSave();
+    }
+
     public function afterFind(){
         if(!empty($this->apply_time))
             $this->apply_time = CommonHelper::formatDate($this->apply_time);
@@ -206,6 +215,7 @@ class Apply extends CActiveRecord
             $criteria->addInCondition("apply_status" , $apply_status);
             if(!empty($select))
                 $criteria->select = $select;
+            $criteria->order = "apply_id desc";
             $curPage = Yii::app()->request->getParam("page");
 
             $cacheConfig = array(
@@ -223,4 +233,35 @@ class Apply extends CActiveRecord
         }
     }
 
+    /**
+     * 按试用品id进行申请人数统计
+     * @param int $item_id 试用品id
+     * @param int $useCache 是否使用缓存
+     * @return int $countNum 申请人数
+     * @throws CException
+     */
+    public function countApplyByItemId($item_id, $useCache=1){
+        if(empty($item_id) || !is_numeric($item_id))
+            throw new CException('item_id参数错误');
+
+        $countNum = 0;
+
+        $cacheKey = md5(__CLASS__.__FUNCTION__.$item_id);
+        $cacheTime = Yii::app()->params['cacheTime']['5min'];
+        $cacheVal = Yii::app()->cache->get($cacheKey);
+
+        if(!empty($cacheVal) && $useCache){
+            $countNum = $cacheVal;
+        }else{
+            $countNum = self::model()->countByAttributes(array(
+                'item_id'=>$item_id,
+            ));
+            Yii::app()->cache->set($cacheKey, $countNum, $cacheTime);
+
+            $theItem = Item::model()->findByPk($item_id);
+            $theItem->setAttribute('item_apply_num', $countNum);
+            $theItem->save(false);
+        }
+        return $countNum;
+    }
 }
